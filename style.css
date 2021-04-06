@@ -135,7 +135,7 @@ html,body{
 	box-shadow: 0px 8px 45px #1E1B1B;
 }
 .slider-content-left img {
-	width: 100%;
+	width: calc(100% + 15px);
 	margin-left: -15px;
 }
 .slider-content-right {
@@ -153,6 +153,10 @@ html,body{
 .fa-whatsapp {
 	background: #3BBF26;
 }
+
+.fa-instagram {
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
 .slider-icon {
 	margin-right: 15px;
 }
@@ -167,12 +171,14 @@ html,body{
 	position: relative;
 }
 .slider-icon a i {
+	position: inherit;
 	width: 100%;
     height: 100%;
 	padding: 10px 0px;
 	border-radius: 5px;
-	position: absolute;
+	/* position: absolute; */
 	top: 0px;
+	transition: all 0.4s;
 }
 .slider-icon a i:hover {
 	top: -10px;
@@ -781,7 +787,13 @@ transform: translate(0,-50%);
 	padding: 25px;
 }
 .review-left-over img {
-	width: 100%;
+	display: block;
+    max-width: 310px;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: top;
 }
 .review-left-text h3 {
 	font-family: 'poppinsmedium';
@@ -881,6 +893,8 @@ transform: translate(0,-50%);
 	line-height: 15px;
     position: absolute;
     right: 3%;
+	top:50%;
+	transform: translate(-3%,-50%);
     font-family: fontawesome;
     content: "\f067";
 	font-size: 15px;
@@ -1159,7 +1173,7 @@ transform: translate(0,-50%);
     height: 100%;
     padding: 10px 0px;
     border-radius: 5px;
-    position: absolute;
+    /* position: absolute; */
     top: 0px;
 	transition:0.3s;
 }
@@ -1255,5 +1269,6 @@ transform: translate(0,-50%);
   .owl-carousel .next-slide:hover{
     background-position: -24px -53px;
   }
+
 
   /* End of Owl Carousel */

@@ -91,46 +91,47 @@
 	/*----------------------------
     START - Progress bar animation
     ------------------------------ */
-	var bar1 = new ProgressBar.Line(progress1, {
-	  strokeWidth: 5,
-	  easing: 'easeInOut',
-	  duration: 2000,
-	  color: '#353C68',
-	  trailColor: '#E9ECFB',
-	  trailWidth: 5,
-	  svgStyle: {width: '100%', height: '100%'}
-	});
-	bar1.animate(1);
-	var bar2 = new ProgressBar.Line(progress2, {
-	  strokeWidth: 5,
-	  easing: 'easeInOut',
-	  duration: 2000,
-	  color: '#353C68',
-	  trailColor: '#E9ECFB',
-	  trailWidth: 5,
-	  svgStyle: {width: '100%', height: '100%'}
-	});
-	bar2.animate(1);
-	var bar3 = new ProgressBar.Line(progress3, {
-	  strokeWidth: 5,
-	  easing: 'easeInOut',
-	  duration: 2000,
-	  color: '#353C68',
-	  trailColor: '#E9ECFB',
-	  trailWidth: 5,
-	  svgStyle: {width: '100%', height: '100%'}
-	});
-	bar3.animate(1);
-	var bar4 = new ProgressBar.Line(progress4, {
-	  strokeWidth: 5,
-	  easing: 'easeInOut',
-	  duration: 2000,
-	  color: '#353C68',
-	  trailColor: '#E9ECFB',
-	  trailWidth: 5,
-	  svgStyle: {width: '100%', height: '100%'}
-	});
-	bar4.animate(1);  // Number from 0.0 to 1.0
+	// var bar1 = new ProgressBar.Line(progress1, {
+	//   strokeWidth: 5,
+	//   easing: 'easeInOut',
+	//   duration: 2000,
+	//   color: '#353C68',
+	//   trailColor: '#E9ECFB',
+	//   trailWidth: 5,
+	//   svgStyle: {width: '100%', height: '100%'}
+	// });
+	// bar1.animate(1);
+	// var bar2 = new ProgressBar.Line(progress2, {
+	//   strokeWidth: 5,
+	//   easing: 'easeInOut',
+	//   duration: 2000,
+	//   color: '#353C68',
+	//   trailColor: '#E9ECFB',
+	//   trailWidth: 5,
+	//   svgStyle: {width: '100%', height: '100%'}
+	// });
+	// bar2.animate(1);
+	// var bar3 = new ProgressBar.Line(progress3, {
+	//   strokeWidth: 5,
+	//   easing: 'easeInOut',
+	//   duration: 2000,
+	//   color: '#353C68',
+	//   trailColor: '#E9ECFB',
+	//   trailWidth: 5,
+	//   svgStyle: {width: '100%', height: '100%'}
+	// });
+	// bar3.animate(1);
+	// var bar4 = new ProgressBar.Line(progress4, {
+	//   strokeWidth: 5,
+	//   easing: 'easeInOut',
+	//   duration: 2000,
+	//   color: '#353C68',
+	//   trailColor: '#E9ECFB',
+	//   trailWidth: 5,
+	//   svgStyle: {width: '100%', height: '100%'}
+	// });
+	// bar4.animate(1);
+	  // Number from 0.0 to 1.0
 
 	/*----------------------------
     START - Scroll to Top
