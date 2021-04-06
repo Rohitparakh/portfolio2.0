@@ -272,6 +272,9 @@
 	.slider-overlay {
 		padding-top: 100px;
 	}
+.service-top .row:nth-child(3){
+flex-direction: column;
+}
 	.service-top-content {
 		width: 420px;
 		margin-left: auto;
