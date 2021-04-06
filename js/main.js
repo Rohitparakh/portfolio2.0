@@ -67,6 +67,15 @@
 		items:1,
 	});
 	
+	$('.portfolio-slider').owlCarousel({
+		loop:true,
+		autoplay: true,
+		autoplayTimeout:4000,
+		items:1,
+		navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+
+	});
+	
 	/*----------------------------
     START - Tab panel
     ------------------------------ */
@@ -91,7 +100,7 @@
 	  trailWidth: 5,
 	  svgStyle: {width: '100%', height: '100%'}
 	});
-	bar1.animate(0.64);
+	bar1.animate(1);
 	var bar2 = new ProgressBar.Line(progress2, {
 	  strokeWidth: 5,
 	  easing: 'easeInOut',
@@ -101,7 +110,7 @@
 	  trailWidth: 5,
 	  svgStyle: {width: '100%', height: '100%'}
 	});
-	bar2.animate(0.74);
+	bar2.animate(1);
 	var bar3 = new ProgressBar.Line(progress3, {
 	  strokeWidth: 5,
 	  easing: 'easeInOut',
@@ -111,7 +120,7 @@
 	  trailWidth: 5,
 	  svgStyle: {width: '100%', height: '100%'}
 	});
-	bar3.animate(0.49);
+	bar3.animate(1);
 	var bar4 = new ProgressBar.Line(progress4, {
 	  strokeWidth: 5,
 	  easing: 'easeInOut',
@@ -121,7 +130,7 @@
 	  trailWidth: 5,
 	  svgStyle: {width: '100%', height: '100%'}
 	});
-	bar4.animate(0.89);  // Number from 0.0 to 1.0
+	bar4.animate(1);  // Number from 0.0 to 1.0
 
 	/*----------------------------
     START - Scroll to Top

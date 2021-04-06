@@ -894,7 +894,9 @@ Version: 1.0
 }
 .testimonial-right img {
 	width: 100%;
+	height:14em;
 	margin-bottom: 20px;
+	object-fit: cover;
 }
 .testimonial-right-txt {
 	margin-top: 60px;
@@ -1132,6 +1134,7 @@ Version: 1.0
     border-radius: 5px;
     position: absolute;
     top: 0px;
+	transition:0.3s;
 }
 .footer-icon a i:hover {
     top: -10px;
@@ -1142,7 +1145,7 @@ Version: 1.0
 .scrollToTop {
 	margin: 0;
 	position: fixed;
-	bottom: 17px;
+	bottom: 150px;
 	right: 25px;
 	width: 50px;
 	height: 50px;

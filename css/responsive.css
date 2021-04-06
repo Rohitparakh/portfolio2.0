@@ -272,9 +272,9 @@
 	.slider-overlay {
 		padding-top: 100px;
 	}
-.service-top .row:nth-child(3){
-flex-direction: column;
-}
+	.service-top .row:nth-child(3){
+	flex-direction: column;
+	}
 	.service-top-content {
 		width: 420px;
 		margin-left: auto;
@@ -376,6 +376,9 @@ flex-direction: column;
 	.contact-top p {
 		margin-top: 30px;
 	}
+	.testimonial-right img {
+		height:23em
+		}
 }
 @media only screen and (max-width:450px) {
 	.service-top-content {
@@ -437,7 +440,9 @@ flex-direction: column;
 	.process-bottom ol li span {
 		margin-left: 0px;
 	}
-}
+	.testimonial-right img {
+	height:11em
+	}
 @media only screen and (max-width:360px) {
 	.count span {
 		font-size: 40px;
