@@ -34,7 +34,7 @@ html,body,*:before,*:after{
 }
 
 html,body{
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 /* Header area start */
