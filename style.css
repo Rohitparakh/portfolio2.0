@@ -454,19 +454,34 @@ Version: 1.0
 .experience-slide-one {
 	padding-left: 90px;
 	padding-right: 90px;
+	display: flex;
+	align-items: center;
 }
 .experience-slide-text {
 	padding: 40px 0px 10px 95px;
+	
 }
 .experience-slide-img img {
 	width: 100%;
 }
 .experience-slide-text h3 {
+	position: relative;
 	font-family: 'poppinsmedium';
-	margin-bottom: 50px;
+	margin-bottom: 5px;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
 }
-.experience-slide-text p {
-	margin-bottom: 35px;
+.experience-slide-text h3:before {
+content: ',';
+position: absolute;
+top:50%;
+font-size: inherit;
+right:-8px;
+transform: translate(0,-50%);
+}
+.experience-slide-text h5 {
+	margin-bottom: 50px;
 }
 .experience .carousel-control {
     background: none;
