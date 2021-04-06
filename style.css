@@ -27,6 +27,16 @@ Version: 1.0
  * Scroll to top
 **/
 
+html,body,*:before,*:after{
+	border:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	overflow: hidden;
+}
+
 /* Header area start */
 .menu {
 	font-family: 'poppinsmedium';
