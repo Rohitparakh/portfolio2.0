@@ -69,14 +69,11 @@
 	
 	$('.portfolio-slider').owlCarousel({
 		loop:true,
-		// autoplay: true,
+		autoplay: true,
 		nav:true,
 		autoplayTimeout:3500,
 		items:1,
-		            navText:["<div class='fa fa-angle-left nav-btn prev-slide'></div>","<div class='fa fa-angle-right nav-btn next-slide'></div>"],
-// navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-
-
+		navText:["<div class='fa fa-angle-left nav-btn prev-slide'></div>","<div class='fa fa-angle-right nav-btn next-slide'></div>"],
 	});
 	
 	/*----------------------------
