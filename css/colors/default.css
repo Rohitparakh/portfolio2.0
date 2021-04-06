@@ -59,7 +59,7 @@
 .process-top-icon i {
 	background: #232A54;
 }
-.process-top-icon i:hover {
+.process-top-icon i.icon:hover {
 	background: #60C926;
 }
 .process-top-before i {
@@ -70,6 +70,11 @@
     background: -moz-linear-gradient(top,rgba(35,42,84,0.9) 0%,rgba(36,43,85,.8) 42%,rgba(41,47,95,0.8) 82%,rgba(41,47,95,0.7) 100%);
     background: -webkit-linear-gradient(top, rgba(35,42,84,0.9) 0%,rgba(36,43,85,.8) 42%,rgba(41,47,95,0.8) 82%,rgba(41,47,95,0.7) 100%);
     background: linear-gradient(to bottom, rgba(35,42,84,0.9) 0%,rgba(36,43,85,.8) 42%,rgba(41,47,95,0.8) 82%,rgba(41,47,95,0.7) 100%);
+}
+.counterup-overlay .row{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
 }
 .experience .carousel-indicators .active {
 	color: #60C926;

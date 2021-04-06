@@ -98,6 +98,9 @@
 	}
 }
 @media only screen and (max-width:991px) {
+	.service-top .row:nth-child(3){
+		margin-top: 0;
+	}
 	.menu li {
 		padding: 20px 10px;
 	}
@@ -131,6 +134,7 @@
 	}
 	.process-top-before {
 		bottom: 67px;
+		top:30%;
 	}
 	.process-top-icon {
 		margin-bottom: 60px;
@@ -138,8 +142,14 @@
 	.process-top-icon.last .process-top-before {
 		display: none;
 	}
-	.count {
+    .col-md-4:nth-child(1) .count{
 		margin-bottom: 50px;
+	}
+	.col-md-4:nth-child(2) .count{
+		margin-bottom: 50px;
+	}
+	.col-md-4:nth-child(3) .count{
+		margin-bottom: 0;
 	}
 	.experience-top-head .top-head-before::before {
 		width: 225px;
@@ -290,6 +300,12 @@
 	.counterup-overlay {
 		padding-top: 85px;
 		padding-bottom: 40px;
+	}
+	.counterup-overlay .row{
+		display: block !important;
+	}
+	.col-md-4:nth-child(3) .count{
+		margin-bottom: 50px;
 	}
 	.portfolio-content {
 		width: 415px;
