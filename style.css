@@ -72,6 +72,10 @@ html,body{
 	color: #2F2F2F;
 	font-family: 'poppinsmedium';
 }
+.navbar-brand span{
+	color:#71C834
+}
+
 .navbar-brand i::before {
 	color: #93D36A;
 	font-size: 22px;
@@ -97,6 +101,10 @@ html,body{
 }
 .sticky .navbar-brand {
 	color: #fff;
+}
+
+.sticky .navbar-brand span{
+    color: #71C834;
 }
 .sticky .menu li a {
 	color: #fff;
