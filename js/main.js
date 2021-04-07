@@ -209,8 +209,9 @@
 		var validEmail=isValidEmail(email);
 		var messageLength=message.length>1?true:false;
 		var nameLength=name.length>1?true:false;
+		var phoneLength=phone.length>7?true:false;
 
-        if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
+        if (isValidEmail(email) && messageLength && nameLength && phoneLength) {
 			console.log(mailBody)
 			Email.send({
 				Host: "smtp.gmail.com",
@@ -247,10 +248,16 @@
 				}
 			}
 			if(!nameLength){
-				if(errorMessage) {errorMessage+=" and name must be longer than 1 character"}else{
+				if(errorMessage) {errorMessage+=", name must be longer than 1 character"}else{
 					errorMessage="Name must be longer than 1 character"
 				}
 			}
+			if(!phoneLength){
+				if(errorMessage) {errorMessage+=" and phone must be longer than 7 digits"}else{
+					errorMessage="Phone must be longer than than 7 digits"
+				}
+			}
+
 			console.log(errorMessage)
 			$('.error').html(errorMessage)
             $('.error').fadeIn(1000);
