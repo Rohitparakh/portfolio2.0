@@ -27,7 +27,7 @@
     background: rgb(30,87,153);
     background: -moz-linear-gradient(-9deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0) 54%,rgba(36,43,85,1) 54%,rgba(36,43,85,0.8) 100%);
     background: -webkit-linear-gradient(-9deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0) 54%,rgba(36,43,85,1) 54%,rgba(36,43,85,0.8) 100%);
-    background: linear-gradient(99deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0) 54%,rgba(36,43,85,1) 54%,rgba(36,43,85,0.8) 100%);
+    background: linear-gradient(99deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0) 57%,rgba(36,43,85,1) 57%,rgba(36,43,85,0.8) 100%);
 }
 .slider-text ul li i {
 	background: #60C926;
