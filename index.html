@@ -991,18 +991,18 @@
 						<div class="contact-form wow fadeInUp">
 	                        <form class="form-inline" id="contact-form">
 	                            <!-- IF MAIL SENT SUCCESSFULLY -->
-	                            <div class="success">
+	                            <div class="success col-md-12">
 	                                Your message has been sent successfully.
 	                            </div>
 	                            <!-- IF MAIL SENDING UNSUCCESSFULL -->
-	                            <div class="error">
-	                                E-mail must be valid and message must be longer than 1 character.
+	                            <div class="error col-md-12">
+	                                
 	                            </div>
 								<!-- Form Fields -->
 								<div class="col-md-4">
 									<div class="form-group">
-										<label class="sr-only" for="first_name">First Name</label>
-										<input type="text" class="form-control" id="first_name" name="first_name" placeholder="Name" required autocomplete="name">
+										<label class="sr-only" for="name">Name</label>
+										<input type="text" class="form-control" id="name" name="name" placeholder="Name" required autocomplete="name">
 									</div>
 								</div>
 								<div class="col-md-4">
@@ -1076,6 +1076,8 @@
 		<script type="text/javascript" src="js/main.js"></script>
         <!-- Font Awesome Script -->
         <script src="https://kit.fontawesome.com/6109a9c796.js" crossorigin="anonymous"></script>
+		<!-- Email through JS -->
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 	</body>
 </html>

@@ -192,29 +192,67 @@
     =================================== */
     $("#contact-form").on('submit', function(e) {
         e.preventDefault();
-        var name = $("#first_name").val() + " " + $("#last_name").val() + " (" + $("#phone_number").val() + ")";
+        var name = $("#name").val();
+		var phone= $("#phone_number").val();
         var email = $("#email_address").val();
-        var subject = $("#contact_reason").val();
+        // var subject = $("#contact_reason").val();
         var message = $("#message").val();
-        var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
+
+        // var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
+        var mailBody = ' Name   : ' + name + '\n Email  : ' + email + '\n Phone  : ' + phone + '\n Message: ' + message;
 
         function isValidEmail(emailAddress) {
             var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
             return pattern.test(emailAddress);
         };
 
+		var validEmail=isValidEmail(email);
+		var messageLength=message.length>1?true:false;
+		var nameLength=name.length>1?true:false;
+
         if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
-            $.ajax({
-                type: "POST",
-                url: "php/sendmail.php",
-                data: dataString,
-                success: function() {
-                    $('.success').fadeIn(1000);
-                    $('.error').fadeOut(500);
-                    $("#contact-form")[0].reset();
-                }
-            });
-        } else {
+			console.log(mailBody)
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username: "rohitparakh4@gmail.com",
+				Password: "Rohit@6812.",
+				To: 'rohitparakh4@gmail.com',
+				From: email,
+				Subject: `Portfolio Enquiry from ${name}`,
+				Body: mailBody,
+			  }).then(function(response){
+				$('.success').fadeIn(1000);
+				$('.error').fadeOut(500);
+				$("#contact-form")[0].reset();
+				console.log(response)
+			  })
+			//     $.ajax({
+            //     type: "POST",
+            //     url: "php/sendmail.php",
+            //     data: dataString,
+            //     success: function() {
+            //         $('.success').fadeIn(1000);
+            //         $('.error').fadeOut(500);
+            //         $("#contact-form")[0].reset();
+            //     }
+            // });
+        } else{
+			var errorMessage;
+			if(!validEmail){
+				errorMessage="E-mail must be valid"
+			}
+			if(!messageLength){
+				if(errorMessage) {errorMessage+=", message must be longer than 1 character"}else{
+					errorMessage="Message must be longer than 1 character"
+				}
+			}
+			if(!nameLength){
+				if(errorMessage) {errorMessage+=" and name must be longer than 1 character"}else{
+					errorMessage="Name must be longer than 1 character"
+				}
+			}
+			console.log(errorMessage)
+			$('.error').html(errorMessage)
             $('.error').fadeIn(1000);
             $('.success').fadeOut(500);
         }
@@ -223,3 +261,72 @@
     });
 
 })(jQuery);
+
+
+  /* =================================
+    ===  CONTACT FORM          ====
+    =================================== */
+
+function arlo_tm_contact_form(){
+	
+	"use strict";
+	jQuery('div.empty_notice').slideUp(500);
+	
+	jQuery(".contact-form #send_message").on('click', function(){
+		
+		var name 		= jQuery(".contact-form #name").val();
+		var email 		= jQuery(".contact-form #email").val();
+		var message 	= jQuery(".contact-form #message").val();
+		var subject 	= jQuery(".contact-form #subject").val();
+		var success     = jQuery(".contact-form .returnmessage").data('success');
+	
+		jQuery(".contact-form .returnmessage").empty(); //To empty previous error/success message.
+		//checking for blank fields	
+		if(name===''||email===''||message===''){
+			
+			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
+		}
+		else{
+			
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username: "rohitparakh4@gmail.com",
+				Password: "Rohit@6812.",
+				To: 'rohitparakh4@gmail.com',
+				From: email,
+				Subject: `Portfolio Enquiry from ${name} (${email})`,
+				Body: message,
+			  })
+				.then(function (response) {
+					console.log(response);
+				//   alert("mail sent successfully"+msg);
+				// jQuery(".contact-form .returnmessage").append(response);
+				if(response.length>=3
+					// jQuery(".contact-form .returnmessage span.contact_error").length
+					){
+					jQuery(".contact-form .returnmessage").slideDown(500).delay(2000).slideUp(500);		
+				}else{
+					jQuery(".contact-form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
+					jQuery(".contact-form .returnmessage").slideDown(500).delay(4000).slideUp(500);
+				}
+				
+				if(response==="OK"){
+					jQuery("#contact-form")[0].reset();//To reset form fields on success
+				}
+				  return false;
+				});
+			
+		
+			// Returns successful data submission message when the entered information is stored in database.
+			// jQuery.post("modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
+				
+			// 	jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
+				
+				
+				
+				
+			// });
+		}
+		return false; 
+	});
+}
