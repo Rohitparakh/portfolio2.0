@@ -398,7 +398,7 @@ html,body{
 .process-top-before {
 	content: "";
     width: 125px;
-    border-top: 2px solid #DBE1EF;
+    /* border-top: 2px solid #DBE1EF; */
     position: absolute;
 	/* bottom: 8px; */
     left: 80%;
