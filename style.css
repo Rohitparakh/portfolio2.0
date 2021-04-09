@@ -29,7 +29,7 @@ Version: 1.0
 
 **/
 
-html,body,*:before,*:after{
+*,html,body,*:before,*:after{
 	border:0;
 	padding: 0;
 	box-sizing: border-box;
@@ -67,6 +67,39 @@ html,body{
 .menu li .menu-color {
 	color: #fff;
 }
+
+.menu li.cta {
+	background:#60C926;
+	border-radius: 3px;
+	padding: 15px 23px 15px 23px;
+
+}
+
+.menu li.cta:hover {
+background: transparent;
+color:#60C926;
+-webkit-box-shadow:inset 0px 0px 0px 2px #60C926;
+    -moz-box-shadow:inset 0px 0px 0px 2px #60C926;
+    box-shadow:inset 0px 0px 0px 2px #60C926;
+}
+
+.menu li.cta:hover a{
+color:#60C926;
+border-bottom:none;
+
+
+}
+
+/* .menu li.cta.active a:hover {
+border: none;
+} */
+
+.menu li.cta:hover a::before {
+content:'';
+right:0px;
+top:0px;
+}
+
 .navbar-brand {
 	font-size: 30px;
 	color: #2F2F2F;
