@@ -14,7 +14,7 @@
 	/*----------------------------
     START - Smooth scroll animation
     ------------------------------ */
-    $('.menu li a, .navbar-brand').on('click', function () {
+    $('.menu li a, .navbar-brand, .cta').on('click', function () {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 		&& location.hostname == this.hostname) {
 		  var $target = $(this.hash);
