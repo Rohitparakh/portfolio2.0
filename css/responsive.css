@@ -107,7 +107,7 @@
 		margin-top: 0;
 	}
 	.menu li {
-		padding: 20px 10px;
+		padding: 20px 16px;
 	}
 	.menu li a {
 		font-size: 15px;
@@ -261,10 +261,19 @@
 		height: 100%;
 	}
 }
+
+
 @media only screen and (max-width:767px) {
+	ul.navbar-nav{
+		text-align: center;
+	}
+	.menu li.cta{
+		margin:10px;
+	}
 	.navbar-fixed-bottom .navbar-collapse,
 	.navbar-fixed-top .navbar-collapse {
 		max-height: 100%;
+		/* height:100vh; */
 		background: #242B55;
 	}
 	.menu li a {
@@ -451,6 +460,7 @@
 	.testimonial-right img {
 	height:11em
 	}
+}
 @media only screen and (max-width:360px) {
 	.count span {
 		font-size: 40px;
