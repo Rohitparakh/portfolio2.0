@@ -204,6 +204,9 @@ top:0px;
 	margin-left: -15px;
 	object-fit: cover;
 	max-height: 697px;
+	position: relative;
+	clip-path: polygon(0 0, 100% 0%, 86% 100%, 0% 100%);
+
 }
 .slider-content-right {
 	padding: 50px 30px 100px 30px;
@@ -545,6 +548,7 @@ top:0px;
 }
 .experience-slide-img img {
 	width: 100%;
+	position: relative;
 }
 .experience-slide-text h3 {
 	position: relative;
