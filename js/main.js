@@ -63,7 +63,7 @@
 	$('.review-slider').owlCarousel({
 		loop:true,
 		autoplay: true,
-		autoplayTimeout:4000,
+		autoplayTimeout:6500,
 		items:1,
 	});
 	
