@@ -62,7 +62,7 @@
 	//review section slider
 	$('.review-slider').owlCarousel({
 		loop:true,
-		autoplay: false,
+		autoplay: true,
 		autoplayTimeout:6500,
 		items:1,
 	});
