@@ -1020,6 +1020,10 @@ transform: translate(0,-50%);
 #progress4 svg {
 	border-radius: 5px;
 }
+
+.fw-bold{
+	font-weight: bold;
+}
 /* end of Testimonial area */
 
 /* Blog area start */
