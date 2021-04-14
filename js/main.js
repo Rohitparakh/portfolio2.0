@@ -51,18 +51,18 @@
     START - Slider animation
     ------------------------------ */
 	//experience section slider
-	$('.experience-slide').owlCarousel({
-		nav:true,
-		loop:true,
-		autoplay: true,
-		autoplayTimeout:4000,
-		navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-		items:1,
-	});
+	// $('.experience-slide').owlCarousel({
+	// 	nav:true,
+	// 	loop:true,
+	// 	autoplay: true,
+	// 	autoplayTimeout:4000,
+	// 	navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+	// 	items:1,
+	// });
 	//review section slider
 	$('.review-slider').owlCarousel({
 		loop:true,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout:6500,
 		items:1,
 	});
@@ -71,7 +71,7 @@
 		loop:true,
 		autoplay: true,
 		nav:true,
-		autoplayTimeout:3500,
+		autoplayTimeout:5000,
 		items:1,
 		navText:["<div class='fa fa-angle-left nav-btn prev-slide'></div>","<div class='fa fa-angle-right nav-btn next-slide'></div>"],
 	});
