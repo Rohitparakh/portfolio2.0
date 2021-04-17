@@ -63,7 +63,7 @@
 
 // service section slider
 		$('.service-slider.owl-carousel').owlCarousel({
-		// loop:true,
+		loop:true,
 		autoplay: true,
 		center:true,
 		// autoplay: false,
@@ -92,13 +92,14 @@
 
 		});
 // service section slider rewind function
-		$('.service-slider.owl-carousel').on('changed.owl.carousel', function(event) {
-			if(event.page.index>0 && event.page.count-event.page.index==1)
-			{
-			setTimeout(() => {
-				$('.service-slider.owl-carousel').trigger('to.owl.carousel', 0)}, event.relatedTarget.settings.autoplayTimeout);
-			}
-					})
+		// $('.service-slider.owl-carousel').on('changed.owl.carousel', function(event) {
+		// 	console.log(event.item)
+		// 	if(event.item.index>0 && event.item.count-event.item.index==1)
+		// 	{
+		// 	setTimeout(() => {
+		// 		$('.service-slider.owl-carousel').trigger('to.owl.carousel', 0)}, event.relatedTarget.settings.autoplayTimeout);
+		// 	}
+		// 			})
 // process section slider
 		$('.process-slider.owl-carousel').owlCarousel({
 			autoplay: true,
