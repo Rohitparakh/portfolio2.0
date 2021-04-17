@@ -60,15 +60,10 @@
 	// 	items:1,
 	// });
 	//review section slider
-	$('.review-slider').owlCarousel({
-		loop:true,
-		autoplay: true,
-		autoplayTimeout:6500,
-		items:1,
-	});
 
-	$('.service-slider.owl-carousel').owlCarousel({
-		loop:true,
+// service section slider
+		$('.service-slider.owl-carousel').owlCarousel({
+		// loop:true,
 		autoplay: true,
 		center:true,
 		// autoplay: false,
@@ -96,7 +91,41 @@
 		}
 
 		});
+// service section slider rewind function
+		$('.service-slider.owl-carousel').on('changed.owl.carousel', function(event) {
+			if(event.page.index>0 && event.page.count-event.page.index==1)
+			{
+			setTimeout(() => {
+				$('.service-slider.owl-carousel').trigger('to.owl.carousel', 0)}, event.relatedTarget.settings.autoplayTimeout);
+			}
+					})
+// process section slider
+		$('.process-slider.owl-carousel').owlCarousel({
+			autoplay: true,
+			center:true,	
+			nav:true,
+			autoplayTimeout:2200,
+			items:1,
+			navText:[,"<div class='fas fa-long-arrow-alt-right nav-btn next-slide'></div>"],
+			margin:0,
+// responsive:{
+// 	400:{
+// 		items:2
+// 	}
+// }			
+	
+			});
 
+// process section slider rewind function
+$('.process-slider.owl-carousel').on('changed.owl.carousel', function(event) {
+				if(event.page.index>0 && event.page.count-event.page.index==1)
+				{
+				setTimeout(() => {
+					$('.process-slider.owl-carousel').trigger('to.owl.carousel', 0)}, event.relatedTarget.settings.autoplayTimeout);
+				}
+						})
+
+// portfolio section slider
 	$('.portfolio-slider').owlCarousel({
 		loop:true,
 		autoplay: true,
@@ -104,6 +133,14 @@
 		autoplayTimeout:5000,
 		items:1,
 		navText:["<div class='fa fa-angle-left nav-btn prev-slide'></div>","<div class='fa fa-angle-right nav-btn next-slide'></div>"],
+	});
+
+// testimonial section slider
+	$('.review-slider').owlCarousel({
+		loop:true,
+		autoplay: true,
+		autoplayTimeout:6500,
+		items:1,
 	});
 	
 	/*----------------------------

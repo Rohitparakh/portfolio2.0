@@ -477,6 +477,22 @@ top:0px;
 	background: none;
 	box-shadow: none;
 }
+
+.fa-long-arrow-alt-right.nav-btn.next-slide{
+	position: absolute;
+	right:2em;
+	top:25% !important;
+	font-size: 2em;
+}
+.disabled .fa-long-arrow-alt-right.nav-btn.next-slide{
+display: none;
+}
+
+.process-slider .owl-item.center{
+	display: flex;
+	justify-content: center;
+}
+
 /* end of Process top area */
 
 /* Process bottom area start */
