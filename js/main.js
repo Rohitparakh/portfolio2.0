@@ -1,4 +1,4 @@
-(function($) {
+  (function($) {
     "use strict";
 	/*----------------------------
     START - Menubar scroll animation
@@ -66,7 +66,37 @@
 		autoplayTimeout:6500,
 		items:1,
 	});
-	
+
+	$('.service-slider.owl-carousel').owlCarousel({
+		loop:true,
+		autoplay: true,
+		center:true,
+		// autoplay: false,
+		nav:true,
+		autoplayTimeout:3500,
+		items:4	,
+		navText:["<div class='fa fa-angle-left nav-btn prev-slide'></div>","<div class='fa fa-angle-right nav-btn next-slide'></div>"],
+		autoWidth:true,
+		margin:0,
+		responsive : {
+			// breakpoint from 0 up
+			0 : {
+				items:1	},
+			// breakpoint from 480 up
+		480 : {
+			item:2
+		},
+			// breakpoint from 768 up
+			768 : {
+		items:3
+			},
+			991:{
+				item:4
+			}
+		}
+
+		});
+
 	$('.portfolio-slider').owlCarousel({
 		loop:true,
 		autoplay: true,

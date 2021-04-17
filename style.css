@@ -304,10 +304,12 @@ top:0px;
 }
 .service-top-content {
 	border: 1px solid #E9EDF9;
+	margin-bottom: 30px;
 	border-radius: 5px;
 	padding: 60px 0px;
 	position: relative;
 	transition: all 0.3s;
+	min-width:210px;
 }
 .service-top-content i {
 	color: #62C823;

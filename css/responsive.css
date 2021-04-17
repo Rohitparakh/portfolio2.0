@@ -2,6 +2,15 @@
 .slider-content-left img {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+.hide-mobile{
+	display: none !important;
+}
+}
+
+@media only screen and (min-width:993px) {
+	.hide-pc{
+		display: none !important;
+	}
 }
 
 @media only screen and (min-width:992px) {
