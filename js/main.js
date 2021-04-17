@@ -73,7 +73,7 @@
 		center:true,
 		// autoplay: false,
 		nav:true,
-		autoplayTimeout:3500,
+		autoplayTimeout:2200,
 		items:4	,
 		navText:["<div class='fa fa-angle-left nav-btn prev-slide'></div>","<div class='fa fa-angle-right nav-btn next-slide'></div>"],
 		autoWidth:true,
