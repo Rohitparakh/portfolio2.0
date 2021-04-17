@@ -310,6 +310,7 @@ top:0px;
 	position: relative;
 	transition: all 0.3s;
 	min-width:210px;
+	max-width: 100%;
 }
 .service-top-content i {
 	color: #62C823;
@@ -1332,10 +1333,12 @@ transform: translate(0,-50%);
   }
 
   .owl-carousel .prev-slide{
-      left: -13px;
+      /* left: -13px; */
+      left: 0px;
   }
   .owl-carousel .next-slide{
-      right: -13px;
+      right: 0px;
+      /* right: -13px; */
   }
   .owl-carousel .prev-slide:hover{
      background-position: 0px -53px;
