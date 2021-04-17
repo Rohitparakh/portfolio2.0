@@ -290,7 +290,7 @@ top:0px;
 
 /* Service top area start */
 .service-top {
-	padding-top: 135px;
+	padding-top: 100px;
 	padding-bottom: 95px;
 }
 .service-top .row:nth-child(3){
@@ -407,7 +407,7 @@ top:0px;
 /* Process top area start */
 .process-top {
 	background: #E9ECFB;
-	padding-top: 140px;
+	padding-top: 90px;
 	padding-bottom: 75px;
 }
 .process-top-head {
@@ -924,7 +924,7 @@ transform: translate(0,-50%);
 
 /* Testimonial area start */
 .testimonial {
-	padding: 140px 0px;
+	padding: 70px 0px;
 }
 .testimonial-top .top-head-before::before {
     width: 115px;
