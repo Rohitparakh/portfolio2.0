@@ -414,6 +414,9 @@
 		}
 }
 @media only screen and (max-width:450px) {
+	.scrollToTop{
+		bottom: 30px;
+	}
 	.service-top-content {
 		width: 100%;
 	}
