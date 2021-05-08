@@ -4,6 +4,8 @@
 (function($) {
     "use strict";
 
+var pathname=window.location.pathname
+
 	
 
 	// Portfolio Websites Display
@@ -33,12 +35,13 @@ const displayPortfolio=(projects)=>{
 	if(document.getElementById('portfolio-slider'))document.getElementById('portfolio-slider').innerHTML=allProjects
 
 }
-
+if(pathname=="/"){
 displayPortfolio(projectsData)
-
-
 var a=findLatestThreePosts(blogData)
 console.log(a)	
+
+}
+
 
 	/*----------------------------
     START - Menubar scroll animation
