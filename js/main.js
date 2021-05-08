@@ -100,8 +100,7 @@ const displayPortfolio=(projects)=>{
 									</div>
 								</div>`
 	}).join('')}
-	console.log(allProjects)
-	document.getElementById('portfolio-slider').innerHTML=allProjects
+	if(document.getElementById('portfolio-slider'))document.getElementById('portfolio-slider').innerHTML=allProjects
 
 }
 
@@ -115,14 +114,14 @@ displayPortfolio(projects)
 	/*----------------------------
     START - Menubar scroll animation
     ------------------------------ */
-	$(window).on('scroll', function() {
+		$(window).on('scroll', function() {
 		if ($(this).scrollTop() > 40) {
 			$('.menubar .navbar').addClass("sticky");
 		} else {
 			$('.menubar .navbar').removeClass("sticky");
 		}
 	});
-	
+
 	/*----------------------------
     START - Smooth scroll animation
     ------------------------------ */
@@ -518,4 +517,5 @@ function arlo_tm_contact_form(){
 	});
 }
 
-
+var now=moment().format("12-25-1995",'DD MM YYYY')
+console.log(now)
