@@ -35,10 +35,11 @@ const displayPortfolio=(projects)=>{
 	if(document.getElementById('portfolio-slider'))document.getElementById('portfolio-slider').innerHTML=allProjects
 
 }
-if(pathname=="/"){
+if(pathname=="/" || pathname=="/index"||pathname=="/index.html"){
 displayPortfolio(projectsData)
-var a=findLatestThreePosts(blogData)
-console.log(a)	
+
+var latestBlogJSON=findLatestThreePosts(blogData)
+latestBlogRenderer(latestBlogJSON)	
 
 }
 
