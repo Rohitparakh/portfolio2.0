@@ -183,7 +183,7 @@ if(pathname=="/" || pathname=="/index"||pathname=="/index.html"||pathname=="/por
 displayPortfolio(projectsData)
 latestBlogJSON=findLatestThreePosts(blogData)
 latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
-latestBlogNavigatorRenderer(blogJSON,"latestBlogCarouselIndicator")
+latestBlogNavigatorRenderer(latestBlogJSON,"latestBlogCarouselIndicator")
 
 }
 
