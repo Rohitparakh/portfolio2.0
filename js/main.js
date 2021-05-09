@@ -99,10 +99,10 @@ const findLatestThreePosts=(blogJSON)=>{
 			</li>
 			`
 		}).join("")
-		if(document.getElementById(idToBeRenderedAt))document.getElementById(idToBeRenderedAt).innerHTML=blogNavigator
+		if(document.getElementById(idToBeRenderedAt||"latestBlogCarousel"))document.getElementById(idToBeRenderedAt||"latestBlogCarousel").innerHTML=blogNavigator
 	console.log({blogNavigator})
 	}
-	
+
 	const latestBlogRenderer=(blogJSON,idToBeRenderedAt)=>{
 		var allBlogs=null;
 		{allBlogs=blogJSON.map((blog,index)=>{
@@ -150,8 +150,7 @@ const findLatestThreePosts=(blogJSON)=>{
 
 	
 
-	latestBlogJSON=findLatestThreePosts(blogData)
-	latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
+
 
 	// Portfolio Websites Display
 	var latestBlogJSON
@@ -180,9 +179,11 @@ const displayPortfolio=(projects)=>{
 	if(document.getElementById('portfolio-slider'))document.getElementById('portfolio-slider').innerHTML=allProjects
 
 }
+
 if(pathname=="/" || pathname=="/index"||pathname=="/index.html"){
 displayPortfolio(projectsData)
-
+latestBlogJSON=findLatestThreePosts(blogData)
+latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
 
 }
 
