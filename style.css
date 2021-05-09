@@ -2284,6 +2284,7 @@ body.search-is-visible {
 	transform: translateY(-50%);
 	position: absolute;
 	top: 50%;
+	right:5%;
 }
 
 .s-header__search-trigger svg {
@@ -2412,7 +2413,7 @@ body.search-is-visible {
 	}
 	.s-header__search-trigger {
 		top: calc(50% + 1px);
-		right: calc(4rem + 5rem);
+		right: calc(4rem + 5rem) !important;
 	}
 	.s-header__search-trigger svg {
 		height: 2.5rem;
@@ -2435,7 +2436,7 @@ body.search-is-visible {
 		right: 2.8rem;
 	}
 	.s-header__search-trigger {
-		right: calc(2.8rem + 5rem);
+		right: calc(2.8rem + 5rem) !important;
 	}
 }
 
@@ -2468,7 +2469,7 @@ body.search-is-visible {
 		right: 3rem;
 	}
 	.s-header__search-trigger {
-		right: calc(2rem + 5rem);
+		right: calc(2rem + 5rem) !important;
 	}
 }
 
