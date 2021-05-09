@@ -45,7 +45,7 @@ const latestBlogNavigatorRenderer=(blogJSON,idToBeRenderedAt)=>{
     var blogNavigator=blogJSON.map((value,index)=>{
         var activeClass=index==0?"active":"";
 
-        return `<li data-target='#quote-carousel' data-slide-to='${index}' class="${activeClass}"><img class="img-responsive " src="${value.featuredImage}" alt="">
+        return `<li data-target='#quote-carousel' data-slide-to='${index}' class="${activeClass}"><img class="img-responsive " src="/portfolio2.0/${value.featuredImage}" alt="">
         </li>
         `
     }).join("")

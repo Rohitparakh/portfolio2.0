@@ -27,7 +27,7 @@ nextBlogData=getBlogPostById(nextId)
     return (`<div class="container">
 <div class="row">
     <div class="blogFeaturedImage col-md-12 mx-auto my-5">
-    <img src="${post[0].featuredImage}" alt="">
+    <img src="/portfolio2.0/${post[0].featuredImage}" alt="">
     </div>
     <div class="blogTitle col-md-12 mx-auto my-5">
     <h1>${post[0].title} </h1>
@@ -42,7 +42,7 @@ nextBlogData=getBlogPostById(nextId)
         <div class="blogMeta col-md-2 ">
         <div class="metaTop">
           <div class="authorImage">
-              <img src="${post[0].authorImage}" alt="">
+              <img src="/portfolio2.0/${post[0].authorImage}" alt="">
           </div>
           <div class="authorInfo">
             <h4 class="metaHeading">POSTED BY:</h4>
