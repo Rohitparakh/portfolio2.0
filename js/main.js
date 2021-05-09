@@ -144,7 +144,7 @@ const findLatestThreePosts=(blogJSON)=>{
 	
 	}
 	latestBlogNavigatorRenderer(blogJSON,"latestBlogCarouselIndicator")
-	console.log({allBlogs})
+	console.log({idToBeRenderedAt})
 	}
 	
 
@@ -180,7 +180,7 @@ const displayPortfolio=(projects)=>{
 
 }
 
-if(pathname=="/" || pathname=="/index"||pathname=="/index.html"){
+if(pathname=="/" || pathname=="/index"||pathname=="/index.html"||pathname=="/portfolio2.0/"){
 displayPortfolio(projectsData)
 latestBlogJSON=findLatestThreePosts(blogData)
 latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
