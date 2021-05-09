@@ -95,11 +95,11 @@ const findLatestThreePosts=(blogJSON)=>{
 		var blogNavigator=blogJSON.map((value,index)=>{
 			var activeClass=index==0?"active":"";
 	
-			return `<li data-target='#quote-carousel' data-slide-to='${index}' class="${activeClass}"><img class="img-responsive " src="/${value.featuredImage}" alt="">
+			return `<li data-target='#quote-carousel' data-slide-to='${index}' class="${activeClass}"><img class="img-responsive" src="${value.featuredImage}" alt="">
 			</li>
 			`
 		}).join("")
-		if(document.getElementById("latestBlogCarousel"))document.getElementById("latestBlogCarousel").innerHTML=blogNavigator
+		if(document.getElementById("latestBlogCarouselIndicator"))document.getElementById("latestBlogCarouselIndicator").innerHTML=blogNavigator
 	console.log({idToBeRenderedAt})
 	}
 
@@ -144,6 +144,8 @@ const findLatestThreePosts=(blogJSON)=>{
 	
 	}
 	console.log({idToBeRenderedAt})
+	if(document.getElementById("latestBlogCarousel"))document.getElementById("latestBlogCarousel").innerHTML=allBlogs
+
 	}
 	
 
