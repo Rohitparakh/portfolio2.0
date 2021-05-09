@@ -99,8 +99,8 @@ const findLatestThreePosts=(blogJSON)=>{
 			</li>
 			`
 		}).join("")
-		if(document.getElementById(idToBeRenderedAt||"latestBlogCarousel"))document.getElementById(idToBeRenderedAt||"latestBlogCarousel").innerHTML=blogNavigator
-	console.log({blogNavigator})
+		if(document.getElementById("latestBlogCarousel"))document.getElementById("latestBlogCarousel").innerHTML=blogNavigator
+	console.log({idToBeRenderedAt})
 	}
 
 	const latestBlogRenderer=(blogJSON,idToBeRenderedAt)=>{
