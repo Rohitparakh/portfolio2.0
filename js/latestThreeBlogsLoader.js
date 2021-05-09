@@ -20,6 +20,8 @@ const findLatestThreePosts=(blogJSON)=>{
             });
     
     }
+    window.alert(blogsWithRequiredDate)
+    console.log(blogsWithRequiredDate)
         return blogsWithRequiredDate
     }
     
