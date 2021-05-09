@@ -20,6 +20,7 @@ const findLatestThreePosts=(blogJSON)=>{
             });
     
     }
+    console.log({blogsWithRequiredDate})
         return blogsWithRequiredDate
     }
     

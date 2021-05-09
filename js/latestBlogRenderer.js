@@ -39,6 +39,7 @@ const latestBlogRenderer=(blogJSON,idToBeRenderedAt)=>{
 
 }
 latestBlogNavigatorRenderer(blogJSON,"latestBlogCarouselIndicator")
+console.log({allBlogs})
 }
 
 const latestBlogNavigatorRenderer=(blogJSON,idToBeRenderedAt)=>{
@@ -50,5 +51,5 @@ const latestBlogNavigatorRenderer=(blogJSON,idToBeRenderedAt)=>{
         `
     }).join("")
 	if(document.getElementById(idToBeRenderedAt))document.getElementById(idToBeRenderedAt).innerHTML=blogNavigator
-
+console.log({blogNavigator})
 }

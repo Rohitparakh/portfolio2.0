@@ -56,14 +56,14 @@ latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")
 	// });
 
 	$(window).on('scroll', function() {
-		console.log('scroll')
+		// console.log('scroll')
 		if ($(this).scrollTop() > 40) {
-			console.log(40)
+			// console.log(40)
 			$('.s-header').addClass("opaque");
-			console.log("add")
+			// console.log("add")
 		} else {
 			$('.s-header').removeClass("opaque");
-			console.log("remove")
+			// console.log("remove")
 
 		}
 	});
