@@ -47,18 +47,30 @@ latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")
 	/*----------------------------
     START - Menubar scroll animation
     ------------------------------ */
-		$(window).on('scroll', function() {
+	// 	$(window).on('scroll', function() {
+	// 	if ($(this).scrollTop() > 40) {
+	// 		$('.menubar .navbar').addClass("sticky");
+	// 	} else {
+	// 		$('.menubar .navbar').removeClass("sticky");
+	// 	}
+	// });
+
+	$(window).on('scroll', function() {
+		console.log('scroll')
 		if ($(this).scrollTop() > 40) {
-			$('.menubar .navbar').addClass("sticky");
+			console.log(40)
+			$('.s-header').addClass("opaque");
+			console.log("add")
 		} else {
-			$('.menubar .navbar').removeClass("sticky");
+			$('.s-header').removeClass("opaque");
+			console.log("remove")
+
 		}
 	});
-
 	/*----------------------------
     START - Smooth scroll animation
     ------------------------------ */
-    $('.menu li a, .navbar-brand, .cta').on('click', function () {
+    $('.s-header__nav li a, .cta').on('click', function () {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 		&& location.hostname == this.hostname) {
 		  var $target = $(this.hash);
@@ -451,3 +463,54 @@ function arlo_tm_contact_form(){
 		return false; 
 	});
 }
+
+  /* Search
+    * ------------------------------------------------------ */
+  const ssSearch = function() {
+
+	const searchWrap = document.querySelector('.s-header__search');
+	const searchTrigger = document.querySelector('.s-header__search-trigger');
+
+	if (!(searchWrap && searchTrigger)) return;
+
+	const searchField = searchWrap.querySelector('.s-header__search-field');
+	const closeSearch = searchWrap.querySelector('.s-header__overlay-close');
+	const siteBody = document.querySelector('body');
+
+	searchTrigger.addEventListener('click', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+
+		siteBody.classList.add('search-is-visible');
+		setTimeout(function(){
+			searchWrap.querySelector('.s-header__search-field').focus();
+		}, 100);
+	});
+
+	closeSearch.addEventListener('click', function(e) {
+		e.stopPropagation();
+
+		if(siteBody.classList.contains('search-is-visible')) {
+			siteBody.classList.remove('search-is-visible');
+			setTimeout(function(){
+				searchWrap.querySelector('.s-header__search-field').blur();
+			}, 100);
+		}
+	});
+
+	searchWrap.addEventListener('click', function(e) {
+		if( !(e.target.matches('.s-header__search-inner')) ) {
+			closeSearch.dispatchEvent(new Event('click'));
+		}
+	});
+
+	searchField.addEventListener('click', function(e) {
+		e.stopPropagation();
+	})
+
+	searchField.setAttribute('placeholder', 'Search for...');
+	searchField.setAttribute('autocomplete', 'off');
+
+}; // end ssSearch
+
+ssSearch()
