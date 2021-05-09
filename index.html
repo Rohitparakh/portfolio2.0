@@ -13,6 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/colors/default.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/colors/default.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/amplifyjs/1.1.2/amplify.min.js" integrity="sha512-CO88rRyfqavT831UMU0+YzJlz3gJ6O5JMj8iduxhuLPdMe7nmTDIopHpkOyedbRwC5IFy9gIBHkKuS6bcPa+9Q==" crossorigin="anonymous"></script>
@@ -22,7 +24,6 @@
 	<script src="js/latestBlogRenderer.js"></script>
 	
 	<!-- SEO -->
-	<seo>
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,14 +69,13 @@
 			]
 		}
 		</script>
-	</seo>
 	</head>
 	<body class="js" data-spy="scroll" data-target=".navbar" data-offset="50">
 	    <!-- Page loader -->
 	    <div id="preloader"></div>
 		<!-- Header area start -->
 		<header id="menu" class="menubar">
-			<nav class="navbar navbar-fixed-top">
+			<nav class="navbar navbar-fixed-top ">
 			  <div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -85,18 +85,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-				  <a rel="follow" class="navbar-brand" href="#menu">Ro<span>hi</span>t Parakh</a>
+				  <a rel="follow" class="navbar-brand" href="/index.html">Ro<span>hi</span>t Parakh</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				  <ul class="nav navbar-nav navbar-right menu">
-					<li><a rel="follow" href="#service">Services</a></li>
-					<li><a rel="follow" href="#process" >Process</a></li>
-					<li><a rel="follow" href="#portfolio" class="menu-color">Portfolio</a></li>
+					<li><a rel="follow" href="/index.html#service">Services</a></li>
+					<li><a rel="follow" href="/index.html#process" >Process</a></li>
+					<li><a rel="follow" href="/index.html#portfolio" class="">Portfolio</a></li>
 					<!-- <li><a rel="follow" href="#portfolio" class="menu-color">Portfolio</a></li> -->
-					<li><a rel="follow" href="#review" class="menu-color">Testimonials</a></li>
-					<!-- <li><a rel="follow" href="#blog" class="menu-color">Blog</a></li> -->
-					<li class="cta" id="hire-me"><a rel="follow" href="#contact" class="menu-color">HIRE ME</a></li>
+					<li><a rel="follow" href="/index.html#review" class="menu-color">Testimonials</a></li>
+					<li><a rel="follow" href="/blog-home.html" class="menu-color">Blog</a></li>
+					<li class="cta" id="hire-me"><a rel="follow" href="/index.html#contact" class="menu-color">HIRE ME</a></li>
 				  </ul>
 				</div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
@@ -899,7 +899,7 @@
 		</section>
 		<!-- Review area end -->
 		<!-- Testimonial area start -->
-		<section class="testimonial">
+		<section class="testimonial" id="faq">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
@@ -1227,6 +1227,43 @@
 		</section><!-- Contact area end -->
 		<!-- Footer area start -->
 		<footer class="footer">
+		<div class="footerTop">
+			<div class="container">
+			<div class="row">
+				<div class="m-b-5 col-md-3 col-sm-4 col-xs-12">
+					<h5>Where are you going?</h5>
+					<p>There is nothing beyond this. <a class="highlight" href="/index.html#contact">Contact</a> me if you need any information 😀</p>
+				</div>
+				<div class="m-b-5 col-md-3 col-sm-4 col-xs-6">
+				<h5>Site Links</h5>	
+				<ul>
+					<li><a href="/index.html#">About Me</a></li>
+					<li><a href="blog-home.html">Blog</a></li>
+					<li><a href="/index.html#faq">FAQ</a></li>
+					<li><a href="">Privacy Policy</a></li>
+				</ul>
+				</div>
+				<div class="m-b-5 col-md-3 col-sm-4 col-xs-6">
+				<h5>Follow Me</h5>
+					<ul>
+				<li><a href="https://www.instagram.com/rohit_parakh">Instagram</a></li>
+				<!-- <li><a href="">Facebook</a></li> -->
+				<li><a href="https://wa.me/919840989414">Whatsapp</a></li>
+				<li><a href="https://in.linkedin.com/in/rohit-parakh-1379581b2">LinkedIn</a></li>	
+			</ul>
+				</div>
+				<div class="m-b-5 col-md-3 col-xs-12">
+				<h5>Sign up for Newsletter </h5>
+				<p>Sign up to get exclusive information and deals.<br><b>No Spam!</b></p>	
+				<form action="">
+					<input type="email" name="email" id="newsletterEmail" placeholder="Your Email Address" required/>
+					<input type="submit" value="Subscribe">
+				</form>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="footerBottom">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -1241,6 +1278,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		</footer><!-- Footer area end -->
 		<!-- scrolltotop start -->
 		<div>
