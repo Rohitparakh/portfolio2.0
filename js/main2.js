@@ -18,6 +18,14 @@
     // doc.setAttribute('data-useragent', navigator.userAgent);
 
 
+    $(window).on('scroll', function() {
+		if ($(this).scrollTop() > 40) {
+			$('.s-header').addClass("opaque");
+		} else {
+			$('.s-header ').removeClass("opaque");
+		}
+	});
+
    /* Preloader
     * -------------------------------------------------- */
     const ssPreloader = function() {
