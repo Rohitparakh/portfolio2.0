@@ -9,7 +9,7 @@ const latestBlogRenderer=(blogJSON,idToBeRenderedAt)=>{
                             <div class="row">
                             <div class="col-md-5 col-sm-9">
                                 <div class="blog-left">
-                                  <a href="/portfolio2.0/blog-post.html?id=${blog.id}">
+                                  <a href="//blog-post.html?id=${blog.id}">
                                     <img src=${blog.latestImgSrc} alt="" /></a>
                                 </div>
                             </div>
@@ -23,7 +23,7 @@ const latestBlogRenderer=(blogJSON,idToBeRenderedAt)=>{
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="blog-right">
-                                <a href="/portfolio2.0/blog-post.html?id=${blog.id}">  
+                                <a href="//blog-post.html?id=${blog.id}">  
                                 <h2>${blog.title}</h2>
                                 </a>
                                     <i class="fa fa-folder-open" aria-hidden="true"></i><span>  ${blog.category.map((category,index)=>{
@@ -45,7 +45,7 @@ const latestBlogNavigatorRenderer=(blogJSON,idToBeRenderedAt)=>{
     var blogNavigator=blogJSON.map((value,index)=>{
         var activeClass=index==0?"active":"";
 
-        return `<li data-target='#quote-carousel' data-slide-to='${index}' class="${activeClass}"><img class="img-responsive " src="/portfolio2.0/${value.featuredImage}" alt="">
+        return `<li data-target='#quote-carousel' data-slide-to='${index}' class="${activeClass}"><img class="img-responsive " src="/${value.featuredImage}" alt="">
         </li>
         `
     }).join("")
