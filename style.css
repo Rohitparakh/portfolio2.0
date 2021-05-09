@@ -2284,7 +2284,7 @@ body.search-is-visible {
 	transform: translateY(-50%);
 	position: absolute;
 	top: 50%;
-	right: 4.4rem;
+	/* right: 4.4rem; */
 }
 
 .s-header__search-trigger svg {
