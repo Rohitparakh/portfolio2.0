@@ -91,6 +91,18 @@ const findLatestThreePosts=(blogJSON)=>{
         return blogsWithRequiredDate
     }
     
+	const latestBlogNavigatorRenderer=(blogJSON,idToBeRenderedAt)=>{
+		var blogNavigator=blogJSON.map((value,index)=>{
+			var activeClass=index==0?"active":"";
+	
+			return `<li data-target='#quote-carousel' data-slide-to='${index}' class="${activeClass}"><img class="img-responsive " src="/${value.featuredImage}" alt="">
+			</li>
+			`
+		}).join("")
+		if(document.getElementById(idToBeRenderedAt))document.getElementById(idToBeRenderedAt).innerHTML=blogNavigator
+	console.log({blogNavigator})
+	}
+	
 	const latestBlogRenderer=(blogJSON,idToBeRenderedAt)=>{
 		var allBlogs=null;
 		{allBlogs=blogJSON.map((blog,index)=>{
@@ -135,18 +147,11 @@ const findLatestThreePosts=(blogJSON)=>{
 	console.log({allBlogs})
 	}
 	
-	const latestBlogNavigatorRenderer=(blogJSON,idToBeRenderedAt)=>{
-		var blogNavigator=blogJSON.map((value,index)=>{
-			var activeClass=index==0?"active":"";
+
 	
-			return `<li data-target='#quote-carousel' data-slide-to='${index}' class="${activeClass}"><img class="img-responsive " src="/${value.featuredImage}" alt="">
-			</li>
-			`
-		}).join("")
-		if(document.getElementById(idToBeRenderedAt))document.getElementById(idToBeRenderedAt).innerHTML=blogNavigator
-	console.log({blogNavigator})
-	}
-	
+
+	latestBlogJSON=findLatestThreePosts(blogData)
+	latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
 
 	// Portfolio Websites Display
 	var latestBlogJSON
@@ -178,8 +183,6 @@ const displayPortfolio=(projects)=>{
 if(pathname=="/" || pathname=="/index"||pathname=="/index.html"){
 displayPortfolio(projectsData)
 
-latestBlogJSON=findLatestThreePosts(blogData)
-latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
 
 }
 
