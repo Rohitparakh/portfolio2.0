@@ -39,10 +39,10 @@ if(pathname=="/" || pathname=="/index"||pathname=="/index.html"){
 displayPortfolio(projectsData)
 
 latestBlogJSON=findLatestThreePosts(blogData)
+alert(latestBlogJSON)
 latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
 
 }
-// latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
 
 
 	/*----------------------------
