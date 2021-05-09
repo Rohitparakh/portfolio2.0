@@ -268,16 +268,17 @@
 	}
 	.blog-content .carousel-indicators {
 		bottom: 0%;
+		left: 23%;
+
 	}
 	.blog-left {
 		height: 600px;
 	}
-	.blog-left img {
+	.blog-content .blog-left img {
 		height: 100%;
+	min-height: 550px;
 	}
 }
-
-
 @media only screen and (max-width:767px) {
 	ul.navbar-nav{
 		text-align: center;
@@ -387,7 +388,7 @@
 		margin-right: auto;
 	}
 	.blog-content .carousel-indicators {
-		left: 40%;
+		left: 18%;
 		width: 60%;
 	}
 	.experience .carousel-indicators {
@@ -414,6 +415,9 @@
 		}
 }
 @media only screen and (max-width:450px) {
+	.blog-content .blog-left img {
+	min-height: 510px;
+	}
 	.scrollToTop{
 		bottom: 30px;
 	}

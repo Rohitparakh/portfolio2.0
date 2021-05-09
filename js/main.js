@@ -9,7 +9,7 @@ var pathname=window.location.pathname
 	
 
 	// Portfolio Websites Display
-
+	var latestBlogJSON
 const displayPortfolio=(projects)=>{
 	var allProjects=null;
 	{allProjects=projects.map((project,index)=>{
@@ -38,10 +38,11 @@ const displayPortfolio=(projects)=>{
 if(pathname=="/" || pathname=="/index"||pathname=="/index.html"){
 displayPortfolio(projectsData)
 
-var latestBlogJSON=findLatestThreePosts(blogData)
-latestBlogRenderer(latestBlogJSON)	
+latestBlogJSON=findLatestThreePosts(blogData)
+latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
 
 }
+// latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
 
 
 	/*----------------------------
@@ -171,14 +172,16 @@ $('.process-slider.owl-carousel').on('changed.owl.carousel', function(event) {
 						})
 
 // portfolio section slider
-	$('.portfolio-slider').owlCarousel({
-		loop:true,
-		autoplay: true,
-		nav:true,
-		autoplayTimeout:5000,
-		items:1,
-		navText:["<div class='fa fa-angle-left nav-btn prev-slide'></div>","<div class='fa fa-angle-right nav-btn next-slide'></div>"],
-	});
+$('.portfolio-slider').owlCarousel({
+	loop:true,
+	autoplay: true,
+	nav:true,
+	autoplayTimeout:5000,
+	items:1,
+	navText:["<div class='fa fa-angle-left nav-btn prev-slide'></div>","<div class='fa fa-angle-right nav-btn next-slide'></div>"],
+});
+
+// portfolio section slider
 
 // testimonial section slider
 	$('.review-slider').owlCarousel({
@@ -449,3 +452,4 @@ function arlo_tm_contact_form(){
 		return false; 
 	});
 }
+// latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	

@@ -1090,7 +1090,7 @@ transform: translate(0,-50%);
 	left: 80px;
 }
 .blog-content .carousel-indicators {
-	left: 54%;
+	left: 51%;
     bottom: 15%;
     width: 46%;
 	margin-left: 0%;
@@ -1111,6 +1111,8 @@ transform: translate(0,-50%);
 }
 .blog-content .blog-left img {
 	width: 100%;
+	min-height: 650px;
+    object-fit: cover;
 }
 .blog-content .blog-comment {
 	margin-top: 390px;
@@ -1528,9 +1530,18 @@ font-size: 14px;
 	text-transform: uppercase;
 }
 
-
-
   /* End Of Blog Page */
+
+  /* .carousel-indicators img.img-responsive{
+	@media(max-width:992px){
+		max-width:110px;
+	} } */
+	@media(min-width:992px){
+		.carousel-indicators img.img-responsive{
+		max-width:150px;
+		}
+	}
+  
 
   /* .row.no-gutters {
 	margin-right: 0;
