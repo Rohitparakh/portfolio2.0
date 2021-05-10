@@ -63,6 +63,7 @@
         const $closeNavWrap = $navWrap.find('.s-header__overlay-close');
         const $menuToggle = $('.s-header__toggle-menu');
         const $siteBody = $('body');
+        const $navLink=  $('.s-header__nav li a')
         
         $menuToggle.on('click', function(e) {
             e.preventDefault();
@@ -72,6 +73,15 @@
         });
 
         $closeNavWrap.on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        
+            if($siteBody.hasClass('nav-wrap-is-visible')) {
+                $siteBody.removeClass('nav-wrap-is-visible');
+            }
+        });
+
+        $navLink.on('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
         
