@@ -4048,7 +4048,7 @@
  .s-hero {
      width: 100%;
      height: 100vh;
-     min-height: calc(25.5 * var(--space));
+     /* min-height: calc(25.5 * var(--space)); */
      background-color: #151515;
      overflow: hidden;
      position: relative;
@@ -4068,12 +4068,17 @@
      max-width: var(--width-wide);
      padding: 0 3.2rem;
      margin-left: 0;
-     margin-top: -15vh;
+     margin-top: -45vh;
      margin-left: auto;
      margin-right: auto;
      position: relative;
  }
  
+ @media(max-width:450px){
+    .s-hero__slider .slick-dots {
+        margin-top: -15vh;
+     }
+ }
  .s-hero__slider .slick-dots li {
      display: inline;
      padding-left: 0;
@@ -4166,7 +4171,7 @@
  }
  
  .s-hero__slide-content {
-     height: 100%;
+     height: 90vh;
      max-width: var(--width-wide);
      padding-top: calc(6 * var(--space));
      padding-bottom: 20vh;
