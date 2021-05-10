@@ -2,31 +2,6 @@
 <html lang="en-US">
 <head>
 	<!-- <script src="https://markknol.github.io/console-log-viewer/console-log-viewer.js"></script> -->
-
-<script type="text/javascript">
-		// Single Page Apps for GitHub Pages
-		// MIT License
-		// https://github.com/rafgraph/spa-github-pages
-		// This script checks to see if a redirect is present in the query string,
-		// converts it back into the correct url and adds it to the
-		// browser's history using window.history.replaceState(...),
-		// which won't cause the browser to attempt to load the new url.
-		// When the single page app is loaded further down in this file,
-		// the correct url will be waiting in the browser's history for
-		// the single page app to route accordingly.
-		(function(l) {
-		  if (l.search[1] === '/' ) {
-			var decoded = l.search.slice(1).split('&').map(function(s) { 
-			  return s.replace(/~and~/g, '&')
-			}).join('?');
-			window.history.replaceState(null, null,
-				l.pathname.slice(0, -1) + decoded + l.hash
-			);
-		  }
-		}(window.location))
-	  </script>
-    
-
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">  
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
@@ -85,7 +60,7 @@
     <header class="s-header">
 
         <div class="s-header__logo">
-                <a rel="follow" class="logo" href="/index.html">Ro<span>hi</span>t Parakh</a>
+                <a rel="follow" class="logo" href="#">Ro<span>hi</span>t Parakh</a>
         </div>
 
         <div class="row s-header__navigation">
@@ -95,11 +70,11 @@
                 <h3 class="s-header__nav-heading h6">Navigate to</h3>
 
                 <ul class="s-header__nav">
-                    <li><a rel="follow" href="/index.html#service">Services</a></li>
-					<li><a rel="follow" href="/index.html#process" >Process</a></li>
-					<li><a rel="follow" href="/index.html#portfolio" class="">Portfolio</a></li>
-					<li><a rel="follow" href="/index.html#review" class="menu-color">Testimonials</a></li>
-					<li class="cta" id="hire-me"><a rel="follow" href="/index.html#contact" class="menu-color">HIRE ME</a></li>
+                    <li><a rel="follow" href="#service">Services</a></li>
+					<li><a rel="follow" href="#process" >Process</a></li>
+					<li><a rel="follow" href="#portfolio" class="">Portfolio</a></li>
+					<li><a rel="follow" href="#review" class="menu-color">Testimonials</a></li>
+					<li class="cta" id="hire-me"><a rel="follow" href="#contact" class="menu-color">HIRE ME</a></li>
                     <!-- <li class="current"><a href="index.html" title="">Home</a></li>
                     <li class="has-children">
                         <a href="#" title="">Categories</a>
@@ -1113,7 +1088,7 @@
 		</section>
 		<!-- Testimonial area end -->
 		<!-- Blog area start -->
-		 <section class="blog" id="blog">
+		 <!-- <section class="blog" id="blog">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
@@ -1129,88 +1104,10 @@
 					<div class="col-md-12">
 						<div class="blog-content wow zoomIn">
 							<div class="carousel slide" data-ride="carousel" id="quote-carousel">
-								<ol class="carousel-indicators" id="latestBlogCarouselIndicator">
-									<!-- <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="/images/bolg-one.png" alt="">
-									</li>
-									<li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="/images/bolg-two.png" alt="">
-									</li>
-									<li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="/images/bolg-one.png" alt="">
-									</li> -->
+								<ol class="carousel-indicators" id="latestBlogCarouselIndicator">					
 								</ol>
-								<div class="carousel-inner text-center blog-slider" id="latestBlogCarousel" >
-									<!-- <div class="item active">
-										<div class="row">
-											<div class="col-md-5 col-sm-9">
-												<div class="blog-left">
-													<img src="/images/bolg-feature.jpg" alt="" />
-												</div>
-											</div>
-											<div class="col-md-1 col-sm-3">
-												<div class="blog-comment">
-													<h1>4</h1>
-													<h4>Feb-17</h4>
-													<h1>21</h1>
-													<h4>Comm</h4>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-12">
-												<div class="blog-right">
-													<h2>How to Have a Creative Desk in 2017</h2>
-													<i class="fa fa-folder-open" aria-hidden="true"></i><span>business, creative, creative</span>
-													<p>When your livelihood depends on your ability to have churn out creative designs everyday, it's imperative that you stay productive. </p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="item">
-										<div class="row">
-											<div class="col-md-5 col-sm-9">
-												<div class="blog-left">
-													<img src="/images/bolg-feature.jpg" alt="" />
-												</div>
-											</div>
-											<div class="col-md-1 col-sm-3">
-												<div class="blog-comment">
-													<h1>4</h1>
-													<h4>Feb-17</h4>
-													<h1>21</h1>
-													<h4>Comm</h4>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-12">
-												<div class="blog-right">
-													<h2>How to Have a Creative Desk in 2017</h2>
-													<i class="fa fa-folder-open" aria-hidden="true"></i><span>business, creative, creative</span>
-													<p>When your livelihood depends on your ability to have churn out creative designs everyday, it's imperative that you stay productive. </p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="item">
-										<div class="row">
-											<div class="col-md-5 col-sm-9">
-												<div class="blog-left">
-													<img src="/images/bolg-feature.jpg" alt="" />
-												</div>
-											</div>
-											<div class="col-md-1 col-sm-3">
-												<div class="blog-comment">
-													<h1>4</h1>
-													<h4>Feb-17</h4>
-													<h1>21</h1>
-													<h4>Comm</h4>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-12">
-												<div class="blog-right">
-													<h2>How to Have a Creative Desk in 2017</h2>
-													<i class="fa fa-folder-open" aria-hidden="true"></i><span>business, creative, creative</span>
-													<p>When your livelihood depends on your ability to have churn out creative designs everyday, it's imperative that you stay productive. </p>
-												</div>
-											</div>
-										</div>
-									</div> -->
-								</div>
+							<div class="carousel-inner text-center blog-slider" id="latestBlogCarousel" >
+							</div>
 							    <a rel="follow" data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-angle-left"></i></a>
 								<a rel="follow" data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-angle-right"></i></a>
 							</div>
@@ -1218,7 +1115,7 @@
 					</div>
 				</div>
 			</div> 
-		 </section>  
+		 </section>   -->
 		<!-- Blog area end -->
 		<!-- Contact area start -->
 		<section class="contact" id="contact">
@@ -1287,14 +1184,14 @@
 				<div class="row w-100">
 					<div class="m-b-5 col-md-3 col-sm-4 col-xs-12">
 						<h5>Where are you going?</h5>
-						<p>There is nothing beyond this. <a class="highlight" href="/index.html#contact">Contact</a> me if you need any information 😀</p>
+						<p>There is nothing beyond this. <a class="highlight" href="#contact">Contact</a> me if you need any information 😀</p>
 					</div>
 					<div class="m-b-5 col-md-3 col-sm-4 col-xs-6">
 					<h5>Site Links</h5>	
 					<ul>
-						<li><a href="/index.html#">About Me</a></li>
+						<li><a href="#">About Me</a></li>
 						<!-- <li><a href="/blog-home.html">Blog</a></li> -->
-						<li><a href="/index.html#faq">FAQ</a></li>
+						<li><a href="#faq">FAQ</a></li>
 						<li><a href="">Privacy Policy</a></li>
 					</ul>
 					</div>
