@@ -81,6 +81,7 @@
             }
         });
 
+        if(window.location.pathname=="/"||window.location.pathname=="/index"||window.location.pathname=="/index.html"){
         $navLink.on('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
@@ -89,6 +90,7 @@
                 $siteBody.removeClass('nav-wrap-is-visible');
             }
         });
+    }
 
         // open (or close) submenu items in mobile view menu. 
         // close all the other open submenu items.
