@@ -128,6 +128,14 @@ latestBlogNavigatorRenderer(latestBlogJSON,"latestBlogCarouselIndicator")
 }
 
 
+if(pathname=="/404" || pathname=="/404.html"){
+	// setTimeout(() => {
+		$('.slick-dots').css("display","none");
+		
+	// }, 3000);
+	console.log('444')
+}
+
 	/*----------------------------
     START - Menubar scroll animation
     ------------------------------ */
