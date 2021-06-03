@@ -862,6 +862,9 @@ transform: translate(0,-50%);
 /* end of Experience area */
 
 /* Portfolio area start */
+.portfolio-slider img{
+	object-fit: contain;
+}
 .portfolio {
 	padding-top: 145px;
 	padding-bottom: 140px;
@@ -1446,6 +1449,10 @@ transform: translate(0,-50%);
 /* end of Contact area */
 
 /* Footer area start */
+
+.footer a:hover {
+    color: white;
+}
 
 .footerTop{
 	background: #1D2347;

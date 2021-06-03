@@ -2,7 +2,7 @@ var blogData=[
     {
         "id":1,
         "title":"Blog Title 1",
-        "featuredImage":"images/sample-1050.jpg",
+        "featuredImage":"/images/sample-1050.jpg",
         "author":"Rohit",
         "authorImage":"/images/avatars/user-06.jpg",
         "category":["a","b","c"],
