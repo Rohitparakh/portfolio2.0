@@ -70,5 +70,45 @@ const projectsData=[
         imgSrc:"images/work/decorators.PNG",
         description:"Project made for non-existent Interior Decorators Store",
         category:"Website Development"
+    },
+    {
+        id:10,
+        name:"HyperIllusion",
+        href:"https://www.hyperillusion.in",
+        imgSrc:"images/work/HyperIllusion.png",
+        description:"Street Culture Fashion Brand",
+        category:"Shopify Development"
+    },
+    {
+        id:11,
+        name:"The Drip Story",
+        href:"https://www.thedripstory.com",
+        imgSrc:"images/work/TheDripStory.png",
+        description:"Digital Service Agency",
+        category:"Wordpress Development"
+    },
+    {
+        id:11,
+        name:"Witty Spirit",
+        href:"https://www.wittyspirit.com",
+        imgSrc:"images/work/WittySpirit.png",
+        description:"Fashion Brand",
+        category:"Shopify Development"
+    },
+    {
+        id:11,
+        name:"SpaceX by Rohit",
+        href:"https://www.spacex-herokuapp.com",
+        imgSrc:"images/work/SpaceXRohit.png",
+        description:"SpaceX launches made using SpaceX API",
+        category:"Shopify Development"
+    },
+    {
+        id:12,
+        name:"Phohit",
+        href:"https://rohit-photography.netlify.app/",
+        imgSrc:"images/work/Phohit.png",
+        description:"Photography portfolio website",
+        category:"Website Development"
     }
 ]

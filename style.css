@@ -864,6 +864,8 @@ transform: translate(0,-50%);
 /* Portfolio area start */
 .portfolio-slider img{
 	object-fit: contain;
+	border: 3px solid #1a2984;
+    border-radius: 5px;
 }
 .portfolio {
 	padding-top: 145px;
