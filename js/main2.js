@@ -326,9 +326,7 @@
         ssSmoothScroll();
         ssBackToTop();
         
-        if(pathname.includes("404") || pathname.includes("blog-home")){
             ssSlickSlider();
-        }
         if(pathname.includes("blog-home")){
             ssAOS();
         }
