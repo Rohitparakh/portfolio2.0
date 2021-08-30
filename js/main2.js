@@ -316,16 +316,22 @@
    /* initialize
     * ------------------------------------------------------ */
     (function ssInit() {
+        var pathname=window.location.pathname
 
         ssPreloader();
         ssMobileMenu();
         ssSearch();
         ssMasonry();
-        ssSlickSlider();
-        ssAOS();
         ssAlertBoxes();
         ssSmoothScroll();
         ssBackToTop();
+        
+        if(pathname.includes("404") || pathname.includes("blog-home")){
+            ssSlickSlider();
+        }
+        if(pathname.includes("blog-home")){
+            ssAOS();
+        }
 
     })();
 

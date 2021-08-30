@@ -4,7 +4,7 @@
 (function($) {
     "use strict";
 
-var pathname=window.location.pathname
+var pathname=window.location.pathname;
 
 
 
@@ -170,7 +170,6 @@ $('.not-found .slick-dots').css("display","none");
 		  }
 		}
 	});
-	
 	/*----------------------------
     START - Menu collapse
     ------------------------------ */
@@ -181,13 +180,15 @@ $('.not-found .slick-dots').css("display","none");
 	/*----------------------------
     START - Counterup
     ------------------------------ */
-	$('.counter').counterUp({
-		delay: 10,
-		time: 1000
-	});
-	$('.counterup').parallax({
-		imageSrc: 'images/process-counter.png'
-	});
+	if(!pathname.includes("blog-home") && !pathname.includes("404")){
+		$('.counter').counterUp({
+			delay: 10,
+			time: 1000
+		});
+		$('.counterup').parallax({
+			imageSrc: 'images/process-counter.png'
+		});
+	}	
 	
 	/*----------------------------
     START - Slider animation
@@ -204,6 +205,7 @@ $('.not-found .slick-dots').css("display","none");
 	//review section slider
 
 // service section slider
+	if(!pathname.includes("blog-home") && !pathname.includes("404")){
 		$('.service-slider.owl-carousel').owlCarousel({
 		loop:true,
 		autoplay: true,
@@ -287,7 +289,7 @@ $('.portfolio-slider').owlCarousel({
 		autoplayTimeout:6500,
 		items:1,
 	});
-	
+	}
 	/*----------------------------
     START - Tab panel
     ------------------------------ */
@@ -389,8 +391,9 @@ $('.portfolio-slider').owlCarousel({
 	/*----------------------------
     START - WOW JS animation
     ------------------------------ */
-	new WOW().init();
-	
+	if(!pathname.includes("blog-home") && !pathname.includes("404")){
+		new WOW().init();
+	}
 	/*----------------------------
     START - Lightbox effect animation
     ------------------------------ */
@@ -604,6 +607,7 @@ function arlo_tm_contact_form(){
   /* Mobile Menu
     * ---------------------------------------------------- */ 
   const ssMobileMenu = function() {
+	var pathname=window.location.pathname;
 
 	const $navWrap = $('.s-header__nav-wrap');
 	const $closeNavWrap = $navWrap.find('.s-header__overlay-close');
@@ -626,7 +630,7 @@ function arlo_tm_contact_form(){
 			$siteBody.removeClass('nav-wrap-is-visible');
 		}
 	});
-
+if(pathname=="/"){
 	$navLink.on('click', function(e) {
 		e.preventDefault();
 		e.stopPropagation();
@@ -635,7 +639,7 @@ function arlo_tm_contact_form(){
 			$siteBody.removeClass('nav-wrap-is-visible');
 		}
 	});
-
+}
 	// open (or close) submenu items in mobile view menu. 
 	// close all the other open submenu items.
 	$('.s-header__nav .has-children').children('a').on('click', function (e) {
@@ -661,10 +665,10 @@ function arlo_tm_contact_form(){
 
 
 (function ssInit() {
-	displayPortfolio(projectsData)
-	latestBlogJSON=findLatestThreePosts(blogData)
-	latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
-	latestBlogNavigatorRenderer(latestBlogJSON,"latestBlogCarouselIndicator")
+	// displayPortfolio(projectsData)
+	// latestBlogJSON=findLatestThreePosts(blogData)
+	// latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
+	// latestBlogNavigatorRenderer(latestBlogJSON,"latestBlogCarouselIndicator")
 	// ssPreloader();
 	ssMobileMenu();
 	ssSearch();
