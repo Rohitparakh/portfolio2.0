@@ -325,10 +325,12 @@
         ssAlertBoxes();
         ssSmoothScroll();
         ssBackToTop();
-        
-            ssSlickSlider();
+
         if(pathname.includes("blog-home")){
             ssAOS();
+            if(pathname.includes("404")){
+                ssSlickSlider();
+            }
         }
 
     })();
