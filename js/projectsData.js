@@ -88,7 +88,7 @@ const projectsData=[
         category:"Wordpress Development"
     },
     {
-        id:11,
+        id:12,
         name:"Witty Spirit",
         href:"https://www.wittyspirit.com",
         imgSrc:"images/work/WittySpirit.png",
@@ -96,19 +96,51 @@ const projectsData=[
         category:"Shopify Development"
     },
     {
-        id:11,
+        id:13,
         name:"SpaceX by Rohit",
         href:"https://www.spacex-herokuapp.com",
         imgSrc:"images/work/SpaceXRohit.png",
         description:"SpaceX launches made using SpaceX API",
-        category:"Shopify Development"
+        category:"React Development"
     },
     {
-        id:12,
+        id:14,
         name:"Phohit",
         href:"https://rohit-photography.netlify.app/",
         imgSrc:"images/work/Phohit.png",
         description:"Photography portfolio website",
         category:"Website Development"
+    },
+    {
+        id:15,
+        name:"Kay Store",
+        href:"https://kaystore.in/",
+        imgSrc:"images/work/kayStore.png",
+        description:"Premium Clothing Store",
+        category:"Shopify Development"
+    },
+    {
+        id:16,
+        name:"Kay Desi",
+        href:"https://kaydesi.in",
+        imgSrc:"images/work/kayDesi.png",
+        description:"Indian Clothing store",
+        category:"Shopify Development"
+    },
+    {
+        id:17,
+        name:"The Gifts Basket",
+        href:"https://rohit-photography.netlify.app/",
+        imgSrc:"images/work/tgb.png",
+        description:"Unique Gifts Store",
+        category:"Shopify Development"
+    },
+    {
+        id:18,
+        name:"Blue Specttica",
+        href:"https://rohit-photography.netlify.app/",
+        imgSrc:"images/work/blueSpecttica.png",
+        description:"Optical store with unique Lens Selection steps",
+        category:"Shopify Development"
     }
 ]
