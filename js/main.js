@@ -119,13 +119,18 @@ const displayPortfolio=(projects)=>{
 
 }
 
-if(pathname=="/" || pathname=="/index"||pathname=="/index.html"||pathname=="/portfolio2.0/"){
-displayPortfolio(projectsData)
-latestBlogJSON=findLatestThreePosts(blogData)
-latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
-latestBlogNavigatorRenderer(latestBlogJSON,"latestBlogCarouselIndicator")
 
-}
+
+window.onload = function afterWebPageLoad() { 
+	if(pathname=="/" || pathname=="/index"||pathname=="/index.html"||pathname=="/portfolio2.0/"){
+		displayPortfolio(projectsData)
+		// latestBlogJSON=findLatestThreePosts(blogData)
+		// latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
+		// latestBlogNavigatorRenderer(latestBlogJSON,"latestBlogCarouselIndicator")
+		
+		}   
+  
+} 
 
 $('.not-found .slick-dots').css("display","none");
 
