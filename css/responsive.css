@@ -20,12 +20,12 @@
 }
 @media only screen and (min-width:1400px) {
 	.slider-img {
-		background: url(../images/slider-bg.png) no-repeat 110% 100%;
+		background: url(../images/slider-bg.webp) no-repeat 110% 100%;
 	}
 }
 @media only screen and (max-width:1399px) {
 	.slider-img {
-		background: url(../images/slider-bg.png) no-repeat 210% 100%;
+		background: url(../images/slider-bg.webp) no-repeat 210% 100%;
 	}
 }
 @media only screen and (max-width:1279px) {
@@ -44,7 +44,7 @@
 		padding: 15px;
 	}
 	.slider-img {
-		background: url(../images/slider-bg.png) no-repeat 400% 100%;
+		background: url(../images/slider-bg.webp) no-repeat 400% 100%;
 	}
 	.slider-overlay {
 		background: -moz-linear-gradient(-9deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0) 50%,rgba(36,43,85,1) 50%,rgba(36,43,85,0.8) 100%);

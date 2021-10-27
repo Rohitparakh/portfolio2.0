@@ -1048,7 +1048,7 @@ transform: translate(0,-50%);
 
 /* Review area start */
 .review {
-	background: url('images/review-bg.jpg') no-repeat;
+	background: url('images/review-bg.webp') no-repeat;
 	padding: 142px 0px;
 	background-size: cover;
 }
@@ -1357,7 +1357,7 @@ transform: translate(0,-50%);
 /* Contact area start */
 .contact {
 	color: #9EA5D1;
-	background: url('images/review-bg.jpg') no-repeat;
+	background: url('images/review-bg.webp') no-repeat;
 	background-size: cover;
 	padding: 142px 0px;
 }

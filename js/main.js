@@ -186,7 +186,7 @@ $('.not-found .slick-dots').css("display","none");
 			time: 1000
 		});
 		$('.counterup').parallax({
-			imageSrc: 'images/process-counter.png'
+			imageSrc: 'images/process-counter.webp'
 		});
 	}	
 	
