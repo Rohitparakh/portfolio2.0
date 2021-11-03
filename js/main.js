@@ -121,7 +121,6 @@ const displayPortfolio=(projects)=>{
 
 
 
-window.onload = function afterWebPageLoad() { 
 	if(pathname=="/" || pathname=="/index"||pathname=="/index.html"||pathname=="/portfolio2.0/"){
 		displayPortfolio(projectsData)
 		// latestBlogJSON=findLatestThreePosts(blogData)
@@ -130,7 +129,6 @@ window.onload = function afterWebPageLoad() {
 		
 		}   
   
-} 
 
 $('.not-found .slick-dots').css("display","none");
 
