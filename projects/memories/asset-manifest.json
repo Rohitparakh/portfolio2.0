@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.a1d481cb.chunk.css",
-    "main.js": "./static/js/main.dd073a77.chunk.js",
-    "main.js.map": "./static/js/main.dd073a77.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.1975d964.js",
-    "runtime-main.js.map": "./static/js/runtime-main.1975d964.js.map",
-    "static/js/2.1deee530.chunk.js": "./static/js/2.1deee530.chunk.js",
-    "static/js/2.1deee530.chunk.js.map": "./static/js/2.1deee530.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.10afd830f452bab43b52d71fe784d0d5.js": "./precache-manifest.10afd830f452bab43b52d71fe784d0d5.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.a1d481cb.chunk.css.map": "./static/css/main.a1d481cb.chunk.css.map",
-    "static/js/2.1deee530.chunk.js.LICENSE.txt": "./static/js/2.1deee530.chunk.js.LICENSE.txt",
-    "static/media/memories.png": "./memories/static/media/memories.5c0c63fb.png"
+    "main.css": "/projects/memories/static/css/main.a1d481cb.chunk.css",
+    "main.js": "/projects/memories/static/js/main.fa16dc80.chunk.js",
+    "main.js.map": "/projects/memories/static/js/main.fa16dc80.chunk.js.map",
+    "runtime-main.js": "/projects/memories/static/js/runtime-main.a7141588.js",
+    "runtime-main.js.map": "/projects/memories/static/js/runtime-main.a7141588.js.map",
+    "static/js/2.00ed743a.chunk.js": "/projects/memories/static/js/2.00ed743a.chunk.js",
+    "static/js/2.00ed743a.chunk.js.map": "/projects/memories/static/js/2.00ed743a.chunk.js.map",
+    "index.html": "/projects/memories/index.html",
+    "precache-manifest.a7bd5b66b36dc6db3810abcd7026dc24.js": "/projects/memories/precache-manifest.a7bd5b66b36dc6db3810abcd7026dc24.js",
+    "service-worker.js": "/projects/memories/service-worker.js",
+    "static/css/main.a1d481cb.chunk.css.map": "/projects/memories/static/css/main.a1d481cb.chunk.css.map",
+    "static/js/2.00ed743a.chunk.js.LICENSE.txt": "/projects/memories/static/js/2.00ed743a.chunk.js.LICENSE.txt",
+    "static/media/memories.png": "/projects/memories/static/media/memories.5c0c63fb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1975d964.js",
-    "static/js/2.1deee530.chunk.js",
+    "static/js/runtime-main.a7141588.js",
+    "static/js/2.00ed743a.chunk.js",
     "static/css/main.a1d481cb.chunk.css",
-    "static/js/main.dd073a77.chunk.js"
+    "static/js/main.fa16dc80.chunk.js"
   ]
 }
