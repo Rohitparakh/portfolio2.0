@@ -12,7 +12,7 @@
     "service-worker.js": "./service-worker.js",
     "static/css/main.a1d481cb.chunk.css.map": "./static/css/main.a1d481cb.chunk.css.map",
     "static/js/2.1deee530.chunk.js.LICENSE.txt": "./static/js/2.1deee530.chunk.js.LICENSE.txt",
-    "static/media/memories.png": "/memories/static/media/memories.5c0c63fb.png"
+    "static/media/memories.png": "./memories/static/media/memories.5c0c63fb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1975d964.js",
