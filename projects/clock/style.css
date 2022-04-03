@@ -189,3 +189,35 @@ body{
     -ms-user-select: none;
     user-select: none;
 }
+
+@media(max-width:767px){
+    .clock{
+        width:65vw;
+        height:65vw;
+    }
+
+    .circle{
+        width:40vw;
+        height:40vw;
+    }
+    
+    .circle2{
+        width:30vw;
+        height:30vw;
+    }
+    
+    .circle3{
+        width:20vw;
+        height:20vw;
+    }
+
+    .clock span b{
+        font-size:1em;
+    }   
+
+    .circle::before{
+        width: 0.5em;
+        height: 0.5em;
+        top: -0.3em;
+    }
+}
