@@ -236,4 +236,8 @@ body{
     #time{
         font-size:1.3em;
     }
+
+    #time div{
+        width:40px
+    }
 }
