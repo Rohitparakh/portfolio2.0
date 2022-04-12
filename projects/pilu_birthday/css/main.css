@@ -98,7 +98,7 @@
     float: unset;
     position: relative;
     width: 68px;
-    height: 120px
+    height: 120px;
 }
 
 .flip-clock-divider span {
@@ -671,4 +671,34 @@
     .w-full-ssm {
         width: 100%
     }
+}
+
+br{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    right: 0;
+    background: white;
+    z-index:9999;
+
+}
+
+br::before{
+    content: '';
+    width: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index:9999;
+}
+
+.flipdown .rotor-group{
+    font-family: "Montserrat-Thin";
+}
+
+
+.rotor-group-heading,.rotor-group-heading:before{
+    font-weight: 900;
 }
