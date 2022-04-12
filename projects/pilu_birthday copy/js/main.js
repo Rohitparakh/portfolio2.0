@@ -46,8 +46,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   // Unix timestamp (in seconds) to count down to
-  var countdownTo = 1663353000;
-  // var countdownTo = 1649763910;
+  // var countdownTo = 1663353000;
+  var countdownTo = 1649763910;
 
   // Set up FlipDown
   var flipdown = new FlipDown(countdownTo)
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("The countdown has ended!");
       console.log(window.location.hostname);
       // document.getElementById("countdown").style.display = "none";
-      window.location.href = `https://rohcodes.com/projects/pilu_birthday/cake.html`;
+      window.location.href = `/projects/pilu_birthday/cake.html`;
     });
 
   // Toggle theme
