@@ -46,10 +46,11 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   // Unix timestamp (in seconds) to count down to
-  var twoDaysFromNow = 1663353000;
+  // var countdownTo = 1663353000;
+  var countdownTo = 1649763910;
 
   // Set up FlipDown
-  var flipdown = new FlipDown(twoDaysFromNow)
+  var flipdown = new FlipDown(countdownTo)
 
     // Start the countdown
     .start()
@@ -57,6 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Do something when the countdown ends
     .ifEnded(() => {
       console.log("The countdown has ended!");
+      // document.getElementById("countdown").style.display = "none";
+      window.location.href =
+        "http://rohcodes.com/projects/pilu_birthday/cake.html";
     });
 
   // Toggle theme
