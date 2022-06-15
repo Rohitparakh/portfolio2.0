@@ -142,6 +142,8 @@ $('.sa').click(function () {
 })
 
 function detectDevice() {
+    document.querySelector('.mobile').style.display="none";
+
     let check = false;
     (function (a) {
         var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
@@ -160,3 +162,4 @@ function detectDevice() {
 }
 
 detectDevice();
+document.querySelector('.mobile').style.display="none";
