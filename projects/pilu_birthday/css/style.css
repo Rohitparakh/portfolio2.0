@@ -550,3 +550,11 @@ path, polyline, line {
   display: flex;
   flex-direction: column;
 }
+
+.mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 4em;
+}
