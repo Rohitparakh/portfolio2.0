@@ -161,5 +161,5 @@ function detectDevice() {
     }
 }
 
-detectDevice();
 document.querySelector('.mobile').style.display="none";
+detectDevice();
