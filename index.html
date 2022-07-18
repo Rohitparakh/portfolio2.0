@@ -10,6 +10,7 @@
 
   gtag('config', 'UA-198539956-1');
 </script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 	<!-- <script src="https://markknol.github.io/console-log-viewer/console-log-viewer.js"></script> -->
 	<link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">  
@@ -810,7 +811,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="contact-form wow fadeInUp">
-	                        <form class="form-inline" id="contact-form">
+	                        <form class="form-inline" id="contact-form" method="post" data-netlify="true" name="contact-form">
 	                            <!-- IF MAIL SENT SUCCESSFULLY -->
 	                            <div class="success col-md-12">
 	                                Your message has been sent successfully.
@@ -823,24 +824,24 @@
 								<div class="col-md-4">
 									<div class="form-group">
 										<label class="sr-only" for="name">Name</label>
-										<input type="text" class="form-control" id="name" name="name" placeholder="Name"  autocomplete="name">
+										<input type="text" class="form-control" id="name" name="name" value="test" placeholder="Name"  autocomplete="name">
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="form-group">
 										<label class="sr-only" for="phone_number">Phone</label>
-										<input type="tel" class="form-control" id="phone_number" name="phone_number" placeholder="Phone"  autocomplete="tel">
+										<input type="tel" class="form-control" id="phone_number" name="phone_number" value="9840989414" placeholder="Phone"  autocomplete="tel">
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="form-group">
 										<label class="sr-only" for="email_address">Email</label>
-										<input type="email" class="form-control" id="email_address" name="email_address" placeholder="Email Address"  autocomplete="email">
+										<input type="email" class="form-control" id="email_address" name="email_address" value="rohitparakh4@gmail.com" placeholder="Email Address"  autocomplete="email">
 									  </div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group-textarea">
-										<textarea class="form-control" id="message" name="message" rows="4" placeholder="Message"  autocomplete="off"></textarea>
+										<textarea class="form-control" id="message" name="message" rows="4" value="test" placeholder="Message"  autocomplete="off"></textarea>
 									</div>
 								</div>
 								<div class="col-md-12 text-center">
@@ -939,7 +940,6 @@
         <!-- Font Awesome Script -->
         <script src="https://kit.fontawesome.com/6109a9c796.js" crossorigin="anonymous"></script>
 		<!-- Email through JS -->
-		<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 	</body>
 </html>

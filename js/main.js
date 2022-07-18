@@ -431,30 +431,32 @@ $('.portfolio-slider').owlCarousel({
 
         if (isValidEmail(email) && messageLength && nameLength && phoneLength) {
 			console.log(mailBody)
-			Email.send({
-				Host: "smtp.gmail.com",
-				Username: "rohitparakh4@gmail.com",
-				Password: "Rohit@6812.",
-				To: 'rohitparakh4@gmail.com',
-				From: email,
-				Subject: `Portfolio Enquiry from ${name}`,
-				Body: mailBody,
-			  }).then(function(response){
-				$('.success').fadeIn(1000);
-				$('.error').fadeOut(500);
-				$("#contact-form")[0].reset();
-				console.log(response)
-			  })
-			//     $.ajax({
-            //     type: "POST",
-            //     url: "php/sendmail.php",
-            //     data: dataString,
-            //     success: function() {
-            //         $('.success').fadeIn(1000);
-            //         $('.error').fadeOut(500);
-            //         $("#contact-form")[0].reset();
-            //     }
-            // });
+			// Email.send({
+			// 	Host: "smtp.gmail.com",
+			// 	Username: "rohitparakh4@gmail.com",
+			// 	Password: "Valorant4.",
+			// 	To: 'rohitparakh4@gmail.com',
+			// 	From: email,
+			// 	Subject: `Portfolio Enquiry from ${name}`,
+			// 	Body: mailBody,
+			//   }).then(function(response){
+			// 	$('.success').fadeIn(1000);
+			// 	$('.error').fadeOut(500);
+			// 	$("#contact-form")[0].reset();
+			// 	console.log(response)
+			//   }).then((res)=>{
+			// 	console.log(res)
+			//   })
+			e.preventDefault();
+			let myForm = document.getElementById("contact-form");
+			let formData = new FormData(myForm);
+			fetch("/", {
+			  method: "POST",
+			  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			  body: new URLSearchParams(formData).toString(),
+			})
+			  .then(() => console.log("Form successfully submitted"))
+			  .catch((error) => alert(error));
         } else{
 			var errorMessage;
 			if(!validEmail){
