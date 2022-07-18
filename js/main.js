@@ -455,7 +455,14 @@ $('.portfolio-slider').owlCarousel({
 			  headers: { "Content-Type": "application/x-www-form-urlencoded" },
 			  body: new URLSearchParams(formData).toString(),
 			})
-			  .then(() => console.log("Form successfully submitted"))
+			  .then((response) => {
+				$('.success').fadeIn(1000);
+				$('.error').fadeOut(500);
+				$("#contact-form")[0].reset();
+				console.log(response)
+			  }).then((res)=>{
+				console.log(res)
+			  })
 			  .catch((error) => alert(error));
         } else{
 			var errorMessage;
