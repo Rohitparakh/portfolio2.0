@@ -23,7 +23,7 @@ const latestBlogRenderer=(blogJSON,idToBeRenderedAt)=>{
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="blog-right">
-                                <a href="//blog-post.html?id=${blog.id}">  
+                                <a href="/blog-post.html?id=${blog.id}">  
                                 <h2>${blog.title}</h2>
                                 </a>
                                     <i class="fa fa-folder-open" aria-hidden="true"></i><span>  ${blog.category.map((category,index)=>{

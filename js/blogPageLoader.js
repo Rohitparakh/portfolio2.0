@@ -24,7 +24,7 @@ if(post[0].id+1>blogMaxIdObj.id){nextId=blogMinIdObj.id}else{nextId=post[0].id+1
 prevBlogData=getBlogPostById(previousId)
 nextBlogData=getBlogPostById(nextId)
 
-    return (`<div class="container">
+    return (`<div class="">
 <div class="row">
     <div class="blogFeaturedImage col-md-12 mx-auto my-5">
     <img src="${post[0].featuredImage}" alt="">

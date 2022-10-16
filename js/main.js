@@ -678,9 +678,9 @@ if(pathname=="/"){
 
 (function ssInit() {
 	// displayPortfolio(projectsData)
-	// latestBlogJSON=findLatestThreePosts(blogData)
-	// latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
-	// latestBlogNavigatorRenderer(latestBlogJSON,"latestBlogCarouselIndicator")
+	latestBlogJSON=findLatestThreePosts(blogData)
+	latestBlogRenderer(latestBlogJSON,"latestBlogCarousel")	
+	latestBlogNavigatorRenderer(latestBlogJSON,"latestBlogCarouselIndicator")
 	// ssPreloader();
 	ssMobileMenu();
 	ssSearch();
