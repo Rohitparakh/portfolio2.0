@@ -9,6 +9,79 @@ const projectsData=[
     },
     {
         id:2,
+        name: "Onset Homes",
+        href: "https://onsethomes.com",
+        imgSrc:"images/work/onsetHomes.png",
+        description: "Hand Crafted Collections and Throws",
+        category:"Shopify Development"
+    },
+    {
+        id:13,
+        name:"Teenprenuer Merch",
+        href:"https://merch.teenpreneur.co",
+        imgSrc:"images/work/merchtp.webp",
+        description:"Entrepreneur Merchandise",
+        category:"Shopify Development"
+    },
+    {
+        id:14,
+        name:"HyperIllusion",
+        href:"https://www.hyperillusion.in",
+        imgSrc:"images/work/HyperIllusion.webp",
+        description:"Street Culture Fashion Brand",
+        category:"Shopify Development"
+    }
+    ,
+    {
+        id:9,
+        name:"Luxewalk",
+        href:"https://www.luxewalk.com",
+        imgSrc:"images/work/luxewalk.webp",
+        description:"Natural Candles E-Com Store",
+        category:"Shopify Development"
+    },
+    {
+        id:11,
+        name:"ExpliciveX",
+        href:"https://www.explicivex.com",
+        imgSrc:"images/work/explicivex.webp",
+        description:"Digital Marketing Agency",
+        category:"Wordpress Development"
+    },
+    {
+        id:15,
+        name:"Witty Spirit",
+        href:"https://www.wittyspirit.com",
+        imgSrc:"images/work/WittySpirit.webp",
+        description:"Fashion Brand",
+        category:"Shopify Development"
+    },  
+    {
+        id:16,
+        name:"Teenprenuer Blog",
+        href:"https://www.teenpreneur.co",
+        imgSrc:"images/work/teenpreneur.webp",
+        description:"Teenage Entreprenuer Blog",
+        category:"Wordpress Development"
+    }, 
+    {
+        id:17,
+        name:"The Gifts Basket",
+        href:"https://rohit-photography.netlify.app/",
+        imgSrc:"images/work/tgb.webp",
+        description:"Unique Gifts Store",
+        category:"Shopify Development"
+    },
+    {
+        id:18,
+        name:"Blue Specttica",
+        href:"https://rohit-photography.netlify.app/",
+        imgSrc:"images/work/blueSpecttica.webp",
+        description:"Optical store with unique Lens Selection steps",
+        category:"Shopify Development"
+    },
+    {
+        id:2,
         name:"SpaceX by Rohit",
         href:"https://www.spacex-herokuapp.com",
         imgSrc:"images/work/SpaceXRohit.webp",
@@ -64,14 +137,6 @@ const projectsData=[
         category:"Website Development"
     },
     {
-        id:9,
-        name:"Luxewalk",
-        href:"https://www.luxewalk.com",
-        imgSrc:"images/work/luxewalk.webp",
-        description:"Natural Candles E-Com Store",
-        category:"Shopify Development"
-    },
-    {
         id:10,
         name:"Youtube Clone",
         href:"https://rohitparakh.github.io/rohit-ytc",
@@ -80,67 +145,11 @@ const projectsData=[
         category:"React Development"
     },
     {
-        id:11,
-        name:"ExpliciveX",
-        href:"https://www.explicivex.com",
-        imgSrc:"images/work/explicivex.webp",
-        description:"Digital Marketing Agency",
-        category:"Wordpress Development"
-    },
-    {
         id:12,
         name:"Phohit",
         href:"https://rohit-photography.netlify.app/",
         imgSrc:"images/work/Phohit.webp",
         description:"Photography portfolio website",
         category:"Website Development"
-    },
-    {
-        id:13,
-        name:"Teenprenuer Merch",
-        href:"https://merch.teenpreneur.co",
-        imgSrc:"images/work/merchtp.webp",
-        description:"Entrepreneur Merchandise",
-        category:"Shopify Development"
-    },
-    {
-        id:14,
-        name:"HyperIllusion",
-        href:"https://www.hyperillusion.in",
-        imgSrc:"images/work/HyperIllusion.webp",
-        description:"Street Culture Fashion Brand",
-        category:"Shopify Development"
-    },
-    {
-        id:15,
-        name:"Witty Spirit",
-        href:"https://www.wittyspirit.com",
-        imgSrc:"images/work/WittySpirit.webp",
-        description:"Fashion Brand",
-        category:"Shopify Development"
-    },  
-    {
-        id:16,
-        name:"Teenprenuer Blog",
-        href:"https://www.teenpreneur.co",
-        imgSrc:"images/work/teenpreneur.webp",
-        description:"Teenage Entreprenuer Blog",
-        category:"Wordpress Development"
-    }, 
-    {
-        id:17,
-        name:"The Gifts Basket",
-        href:"https://rohit-photography.netlify.app/",
-        imgSrc:"images/work/tgb.webp",
-        description:"Unique Gifts Store",
-        category:"Shopify Development"
-    },
-    {
-        id:18,
-        name:"Blue Specttica",
-        href:"https://rohit-photography.netlify.app/",
-        imgSrc:"images/work/blueSpecttica.webp",
-        description:"Optical store with unique Lens Selection steps",
-        category:"Shopify Development"
     }
 ]
