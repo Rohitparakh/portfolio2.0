@@ -139,7 +139,7 @@ const projectsData=[
         name:"Paranoia Miami",
         href:"https://paranoiamiami.com/",
         imgSrc:"images/work/paranoia.webp",
-        description:"Award Winning Horror Maze based out in Miami, Florida,
+        description:"Award Winning Horror Maze based out in Miami, Florida",
         category:"Wordpress Development"
     },
     {
