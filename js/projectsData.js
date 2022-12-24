@@ -22,6 +22,14 @@ const projectsData=[
         category:"Shopify Development"
     },
     {
+        id:15,
+        name:"Luxewalk",
+        href:"https://www.luxewalk.com",
+        imgSrc:"images/work/luxewalk.png",
+        description:"Natural Candles E-Com Store",
+        category:"Shopify Development"
+    },
+    {
         id:18,
         name: "Onset Homes",
         href: "https://onsethomes.com",
@@ -46,14 +54,7 @@ const projectsData=[
         category:"Shopify Development"
     }
     ,
-    {
-        id:15,
-        name:"Luxewalk",
-        href:"https://www.luxewalk.com",
-        imgSrc:"images/work/luxewalk.webp",
-        description:"Natural Candles E-Com Store",
-        category:"Shopify Development"
-    },
+    
     {
         id:14,
         name:"ExpliciveX",
