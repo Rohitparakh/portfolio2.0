@@ -1,6 +1,20 @@
 const projectsData=[
     {
-        id:1,
+        id:21,
+        name:"Tuna Active",
+        href:"https://tunactive.com/",
+        imgSrc:"images/work/tunaactive.png",
+        description:"Premium Active Wear Clothing Store",
+        category:"Shopify Development"
+    },{
+        id:20,
+        name:"Bombay Toy Company",
+        href:"https://bombaytoycompany.com/",
+        imgSrc:"images/work/btc.png",
+        description:"Toy Store",
+        category:"Shopify Development"
+    },{
+        id:19,
         name:"Kay Store",
         href:"https://kaystore.in/",
         imgSrc:"images/work/kayStore.webp",
@@ -8,7 +22,7 @@ const projectsData=[
         category:"Shopify Development"
     },
     {
-        id:2,
+        id:18,
         name: "Onset Homes",
         href: "https://onsethomes.com",
         imgSrc:"images/work/onsetHomes.png",
@@ -16,7 +30,7 @@ const projectsData=[
         category:"Shopify Development"
     },
     {
-        id:13,
+        id:17,
         name:"Teenprenuer Merch",
         href:"https://merch.teenpreneur.co",
         imgSrc:"images/work/merchtp.webp",
@@ -24,7 +38,7 @@ const projectsData=[
         category:"Shopify Development"
     },
     {
-        id:14,
+        id:16,
         name:"HyperIllusion",
         href:"https://www.hyperillusion.in",
         imgSrc:"images/work/HyperIllusion.webp",
@@ -33,7 +47,7 @@ const projectsData=[
     }
     ,
     {
-        id:9,
+        id:15,
         name:"Luxewalk",
         href:"https://www.luxewalk.com",
         imgSrc:"images/work/luxewalk.webp",
@@ -41,7 +55,7 @@ const projectsData=[
         category:"Shopify Development"
     },
     {
-        id:11,
+        id:14,
         name:"ExpliciveX",
         href:"https://www.explicivex.com",
         imgSrc:"images/work/explicivex.webp",
@@ -49,7 +63,7 @@ const projectsData=[
         category:"Wordpress Development"
     },
     {
-        id:15,
+        id:13,
         name:"Witty Spirit",
         href:"https://www.wittyspirit.com",
         imgSrc:"images/work/WittySpirit.webp",
@@ -57,7 +71,7 @@ const projectsData=[
         category:"Shopify Development"
     },  
     {
-        id:16,
+        id:12,
         name:"Teenprenuer Blog",
         href:"https://www.teenpreneur.co",
         imgSrc:"images/work/teenpreneur.webp",
@@ -65,7 +79,7 @@ const projectsData=[
         category:"Wordpress Development"
     }, 
     {
-        id:17,
+        id:11,
         name:"The Gifts Basket",
         href:"https://rohit-photography.netlify.app/",
         imgSrc:"images/work/tgb.webp",
@@ -73,7 +87,7 @@ const projectsData=[
         category:"Shopify Development"
     },
     {
-        id:18,
+        id:10,
         name:"Blue Specttica",
         href:"https://rohit-photography.netlify.app/",
         imgSrc:"images/work/blueSpecttica.webp",
@@ -81,7 +95,7 @@ const projectsData=[
         category:"Shopify Development"
     },
     {
-        id:2,
+        id:9,
         name:"SpaceX by Rohit",
         href:"https://www.spacex-herokuapp.com",
         imgSrc:"images/work/SpaceXRohit.webp",
@@ -89,7 +103,7 @@ const projectsData=[
         category:"React Development"
     },
     {
-        id:3,
+        id:8,
         name:"The Drip Story",
         href:"https://www.thedripstory.com",
         imgSrc:"images/work/TheDripStory.webp",
@@ -97,7 +111,7 @@ const projectsData=[
         category:"Wordpress Development"
     },
     {
-        id:4,
+        id:7,
         name:"Interior Decorators",
         href:"https://rohit-decorators.netlify.app/",
         imgSrc:"images/work/decorators.webp",
@@ -105,7 +119,7 @@ const projectsData=[
         category:"Website Development"
     },
     {
-        id:5,
+        id:6,
         name:"Kay Desi",
         href:"https://kaydesi.in",
         imgSrc:"images/work/kayDesi.webp",
@@ -113,7 +127,7 @@ const projectsData=[
         category:"Shopify Development"
     },
     {
-        id:6,
+        id:5,
         name:"SVM Electronics",
         href:"https://rohitparakh.github.io/svm-react",
         imgSrc:"images/work/svm-react.webp",
@@ -121,15 +135,15 @@ const projectsData=[
         category:"React Development"
     },
     {
-        id:7,
+        id:4,
         name:"Paranoia Miami",
         href:"https://paranoiamiami.com/",
         imgSrc:"images/work/paranoia.webp",
-        description:"Award Winning Horror Maze based out in Miami, Florida, USA",
+        description:"Award Winning Horror Maze based out in Miami, Florida,
         category:"Wordpress Development"
     },
     {
-        id:8,
+        id:3,
         name:"Mobile App Website",
         href:"https://rohit-mobile-app.netlify.app",
         imgSrc:"images/work/mobileapp.webp",
@@ -137,7 +151,7 @@ const projectsData=[
         category:"Website Development"
     },
     {
-        id:10,
+        id:2,
         name:"Youtube Clone",
         href:"https://rohitparakh.github.io/rohit-ytc",
         imgSrc:"images/work/ytc.webp",
@@ -145,7 +159,7 @@ const projectsData=[
         category:"React Development"
     },
     {
-        id:12,
+        id:1,
         name:"Phohit",
         href:"https://rohit-photography.netlify.app/",
         imgSrc:"images/work/Phohit.webp",
