@@ -9,7 +9,7 @@ const latestBlogRenderer=(blogJSON,idToBeRenderedAt)=>{
                             <div class="row">
                             <div class="col-md-5 col-sm-9">
                                 <div class="blog-left">
-                                  <a href="//blog-post.html?id=${blog.id}">
+                                  <a href="/blog-post.html?id=${blog.id}">
                                     <img src=${blog.latestImgSrc} alt="" /></a>
                                 </div>
                             </div>
@@ -17,8 +17,7 @@ const latestBlogRenderer=(blogJSON,idToBeRenderedAt)=>{
                                 <div class="blog-comment">
                                     <h1>${blogDate}</h1>
                                     <h4>${blogMonth}, ${blogYear}</h4>
-                                    <h1>21</h1>
-                                    <h4>Comm</h4>
+                                    
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
