@@ -1220,14 +1220,11 @@ body {
   
   }
   
-  img:hover {
-    opacity: 0.5;
-  }
   
-  #box1, #box2, #box3, #box4 {
+  #slider div {
     width: 700px;
     height: 500px;
-      -webkit-box-shadow: 0px 1px 1px;
+      /* -webkit-box-shadow: 0px 1px 1px; */
     float: left;
     background: url(http://www.ilhamrock.com/wp-content/uploads/2014/10/cropped-I-copy.png);
     background-repeat: no-repeat;
@@ -1238,7 +1235,7 @@ body {
   
   
   
-  #slideshow-container {
+  #slider {
     width: 700px;
     max-height: 500px;
     position: relative;
@@ -1247,17 +1244,20 @@ body {
     margin-top: 30px;
     box-shadow: 0px 10px 10px #333;
     border-radius: 10px;
-  }
-  
-  #slideshow {
-    width: 1000%;
-    -webkit-animation: slideshow 20s infinite;
-    -moz-animation: slideshow 20s infinite;
-    -o-animation: slideshow 20s infinite;
-    -ms-animation: slideshow 20s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  #slideshow img{
+  #slider button{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    outline: none;
+    border:none
+  }
+  
+  #slider img{
     object-fit: contain;
   }
   
@@ -1307,3 +1307,14 @@ body {
   
   
   
+  .slick-prev:before {
+    content: "<";
+    color: #3b2640;
+    font-size: 30px;
+  }
+  
+  .slick-next:before {
+    content: ">";
+    color: #3b2640;
+    font-size: 30px;
+  }
