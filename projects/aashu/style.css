@@ -1240,6 +1240,7 @@ body {
   
   #slideshow-container {
     width: 700px;
+    max-height: 500px;
     position: relative;
     overflow: hidden;
     margin: auto;
@@ -1254,6 +1255,10 @@ body {
     -moz-animation: slideshow 20s infinite;
     -o-animation: slideshow 20s infinite;
     -ms-animation: slideshow 20s infinite;
+  }
+
+  #slideshow img{
+    object-fit: contain;
   }
   
   /* Animation
