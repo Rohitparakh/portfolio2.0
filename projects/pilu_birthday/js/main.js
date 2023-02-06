@@ -47,7 +47,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Unix timestamp (in seconds) to count down to
   // var countdownTo = 1655317800;
-  var countdownTo = 1663353000;
+  var countdownTo = 1694908800;
 
   // Set up FlipDown
   var flipdown = new FlipDown(countdownTo)
