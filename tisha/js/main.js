@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("The countdown has ended!");
       console.log(window.location.hostname);
       // document.getElementById("countdown").style.display = "none";
-      window.location.href = `https://rohcodes.com/projects/tisha/cake.html`;
+      window.location.href = `https://rohcodes.com/tisha/cake.html`;
     });
 
   // Toggle theme
