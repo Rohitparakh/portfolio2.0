@@ -48,20 +48,23 @@ $('.mixer').click(function () {
     if (mixtimes == 2) {
         $('.stage2').fadeOut();
         fire_modal('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mix_modal.png', 'Mix successful!', 'Congratulations, the mixture is perfect! After pouring the mixture into a baking tin, it’s now time to put it in our digital oven for about 3 seconds. That should be enough time for a nice spongy base.');
-
     }
 
 })
 
-$('.tin').draggable({
-    revert: true
-})
-$(".oven").droppable({
-    drop: function (event, ui) {
-        $('.stage3').fadeOut();
-        fire_modal('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/oven_modal.png', 'Bake successfull!', 'Yes! You are a master chef. The base is fully baked and looks super yummy. Now its time to combine this base with lots of other ingredients like jam, marmalade, chocolate and more.');
-    }
-})
+$('.tin').click(function () {
+    $('.stage3').fadeOut();
+    fire_modal('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/oven_modal.png', 'Bake successfull!', 'Yes! You are a master chef. The base is fully baked and looks super yummy. Now its time to combine this base with lots of other ingredients like jam, marmalade, chocolate and more.');
+});
+// $('.tin').draggable({
+//     revert: true
+// })
+// $(".oven").droppable({
+//     drop: function (event, ui) {
+//         $('.stage3').fadeOut();
+//         fire_modal('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/oven_modal.png', 'Bake successfull!', 'Yes! You are a master chef. The base is fully baked and looks super yummy. Now its time to combine this base with lots of other ingredients like jam, marmalade, chocolate and more.');
+//     }
+// })
 
 bases = 0;
 fillings = 0;
