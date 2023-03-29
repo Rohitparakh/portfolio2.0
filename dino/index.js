@@ -209,7 +209,7 @@ function showGameComplete() {
   const y = canvas.height / 2;
   ctx.fillText("GAME COMPLETE", x, y);
   // showPopup();
-  setupGameReset()
+  // setupGameReset()
 }
 
 function setupGameReset() {
@@ -487,6 +487,6 @@ function gameLoop(currentTime) {
 }
 
 requestAnimationFrame(gameLoop);
-
-window.addEventListener("keyup", reset, { once: true });
-window.addEventListener("touchstart", reset, { once: true });
+setupGameReset()
+// window.addEventListener("keyup", reset, { once: true });
+// window.addEventListener("touchstart", reset, { once: true });
