@@ -284,7 +284,7 @@ function gameLoop(currentTime) {
     var delay = 0;
     switch (true) {    
       // level 1
-      case (scoreCurr > 2499 && scoreCurr < 2501):        
+      case (scoreCurr > 1999 && scoreCurr < 2001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[0].classList.add("show")
@@ -299,7 +299,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 2
-      case (scoreCurr > 4999 && scoreCurr < 5001):        
+      case (scoreCurr > 3999 && scoreCurr < 4001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[1].classList.add("show")
@@ -314,7 +314,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 3
-      case (scoreCurr > 7499 && scoreCurr < 7501):        
+      case (scoreCurr > 5999 && scoreCurr < 6001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[2].classList.add("show")
@@ -329,7 +329,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 4
-      case (scoreCurr > 9999 && scoreCurr < 10001):        
+      case (scoreCurr > 7999 && scoreCurr < 8001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[3].classList.add("show")
@@ -344,7 +344,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 5
-      case (scoreCurr > 12499 && scoreCurr < 12501):
+      case (scoreCurr > 9999 && scoreCurr < 10001):
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[4].classList.add("show")
@@ -359,7 +359,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 6
-      case (scoreCurr > 14999 && scoreCurr < 15001):        
+      case (scoreCurr > 11999 && scoreCurr < 12001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[5].classList.add("show")
@@ -374,7 +374,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 7
-      case (scoreCurr > 17499 && scoreCurr < 17501):        
+      case (scoreCurr > 13999 && scoreCurr < 14001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[6].classList.add("show")
@@ -389,7 +389,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 8
-      case (scoreCurr > 19999 && scoreCurr < 20001):        
+      case (scoreCurr > 15999 && scoreCurr < 16001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[7].classList.add("show")
@@ -404,7 +404,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 9
-      case (scoreCurr > 22499 && scoreCurr < 22501):        
+      case (scoreCurr > 17999 && scoreCurr < 18001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[8].classList.add("show")
@@ -419,7 +419,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 10
-      case (scoreCurr > 24999 && scoreCurr < 25001):        
+      case (scoreCurr > 19999 && scoreCurr < 20001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[9].classList.add("show")
@@ -434,7 +434,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 11
-      case (scoreCurr > 27499 && scoreCurr < 27501):        
+      case (scoreCurr > 21999 && scoreCurr < 22001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[10].classList.add("show")
@@ -449,7 +449,7 @@ function gameLoop(currentTime) {
         break;
         
       // level 12
-      case (scoreCurr > 29999 && scoreCurr < 30001):        
+      case (scoreCurr > 23999 && scoreCurr < 24001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[11].classList.add("show")
@@ -464,7 +464,7 @@ function gameLoop(currentTime) {
         break;
         
       // game complete
-      case (scoreCurr < 32499 && scoreCurr>32501):
+      case (scoreCurr < 25999 && scoreCurr>26001):
         var audio = new Audio('audio/point.mp3');
         audio.play();
         //Update game objects
