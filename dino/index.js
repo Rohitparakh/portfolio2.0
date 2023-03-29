@@ -468,9 +468,15 @@ function gameLoop(currentTime) {
   }
 
   if (!gameOver && cactiController.collideWith(player)) {
-    gameOver = true;
+    var audio = new Audio('audio/die.mp3');
+    audio.play();
+    setTimeout(()=>{
+      gameOver = true;
+      score.setHighScore();
+
+    },1)
+
     // setupGameReset();
-    score.setHighScore();
   }
 
   //Draw game objects

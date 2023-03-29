@@ -79,6 +79,7 @@
         background-color: #fff;
       }
       .formContainer input[type=text],
+      .formContainer input[type=number],
       .formContainer input[type=password] {
         width: 100%;
         padding: 15px;
@@ -87,6 +88,7 @@
         background: #eee;
       }
       .formContainer input[type=text]:focus,
+      .formContainer input[type=number]:focus,
       .formContainer input[type=password]:focus {
         background-color: #ddd;
         outline: none;
@@ -163,7 +165,8 @@ margin:10px -50px;
 border:0;
 border-top:1px solid #ccc
 }
-input[type=text] {
+input[type=text], 
+input[type=number] {
   width: 100%;
     padding: 10px;
     margin-top: 30px;
@@ -313,7 +316,7 @@ cursor:pointer
       <h2>Fill details to continue</h2>
       <hr>
       <input id="Name" name="Name" placeholder="Name" type="text">
-      <input id="Email" name="Email" placeholder="Email" type="text">
+      <input id="Email" name="Email" placeholder="Phone" type="number">
       <input id="submit_btn" type="submit">
       </input>
       </form>
