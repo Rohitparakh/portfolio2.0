@@ -494,6 +494,6 @@ function gameLoop(currentTime) {
 }
 
 requestAnimationFrame(gameLoop);
-setupGameReset();
-// window.addEventListener("keyup", reset, { once: true });
-// window.addEventListener("touchstart", reset, { once: true });
+// setupGameReset();
+window.addEventListener("keyup", reset, { once: true });
+window.addEventListener("touchstart", reset, { once: true });
