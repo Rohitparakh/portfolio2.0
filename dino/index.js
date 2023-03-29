@@ -124,13 +124,39 @@ let isContinue=true;
 
 // Validating Empty Field
 function check_empty() {
-  if (document.getElementById('name').value == "" || document.getElementById('email').value == "" ) {
+  if (document.getElementById('Name').value == "" || document.getElementById('Email').value == "" ) {
   alert("Fill All Fields !");
   } else {
   // document.getElementById('form').submit();
+  console.log("1")
+  var url = 'https://script.google.com/macros/s/AKfycbw8__iPhe4gBJPCgWOT_wbzATOCcMjLzhew_oIS3leserAEspSoTv7MOayEu0SB2yxL5A/exec';
+  
+    //get the form from DOM (Document object model) 
+    var form = document.getElementById('form');
+        var xhr = new XMLHttpRequest();
+        var data = new FormData(form);
+        //Add extra data to form before submission.
+     //    data.append("referer","https://example.com");
+        //open the request
+        xhr.open('POST',url)
+        //send the form data
+        xhr.send(data);
+ 
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.DONE) {
   alert("Form Submitted Successfully...");
-  div_hide();
-  continueGame();
+                form.reset(); //reset form after AJAX success.
+                div_hide();
+                continueGame();
+  console.log("2");
+
+            }
+        }
+        console.log("3")
+        //Dont submit the form.
+        return false; 
+  
+
   }
   }
   //Function To Display Popup

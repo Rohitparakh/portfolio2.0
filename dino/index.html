@@ -175,17 +175,17 @@ input[type=text] {
 
 }
 #name {
-background-image:url(../images/name.jpg);
+/* background-image:url(../images/name.jpg); */
 background-repeat:no-repeat;
 background-position:5px 7px
 }
 #email {
-background-image:url(../images/email.png);
+/* background-image:url(../images/email.png); */
 background-repeat:no-repeat;
 background-position:5px 7px
 }
 textarea {
-background-image:url(../images/msg.png);
+/* background-image:url(../images/msg.png); */
 background-repeat:no-repeat;
 background-position:5px 7px;
 width:82%;
@@ -308,17 +308,19 @@ cursor:pointer
       <!-- Popup Div Starts Here -->
       <div id="popupContact">
       <!-- Contact Us Form -->
-      <form action="#" id="form" method="post" name="form">
+      <form id="form" name="form">
       <img id="close" src="images/close.png" onclick ="window.location.reload()" width="48" height="48">
       <h2>Fill details to continue</h2>
       <hr>
-      <input id="name" name="name" placeholder="Name" type="text">
-      <input id="email" name="email" placeholder="Email" type="text">
-      <a href="javascript:void(0)" id="submit_btn">Send</a>
+      <input id="Name" name="Name" placeholder="Name" type="text">
+      <input id="Email" name="Email" placeholder="Email" type="text">
+      <input id="submit_btn" type="submit">
+      </input>
       </form>
       </div>
       <!-- Popup Div Ends Here -->
       </div>
-      
+      <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+      <script src="main.js"></script>      
   </body>
 </html>
