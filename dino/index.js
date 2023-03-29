@@ -38,6 +38,8 @@ let gameOver = false;
 let gameComplete = false;
 let hasAddedEventListenersForRestart = false;
 let waitingToStart = true;
+let formOpen = false;
+console.log(formOpen)
 
 function createSprites() {
   const playerWidthInGame = PLAYER_WIDTH * scaleRatio;
@@ -121,7 +123,6 @@ function getScaleRatio() {
 
 let isContinue=true;
 
-
 // Validating Empty Field
 function check_empty() {
   if (document.getElementById('Name').value == "" || document.getElementById('Email').value == "" ) {
@@ -130,7 +131,7 @@ function check_empty() {
   // document.getElementById('form').submit();
   console.log("1")
   var url = 'https://script.google.com/macros/s/AKfycbw8__iPhe4gBJPCgWOT_wbzATOCcMjLzhew_oIS3leserAEspSoTv7MOayEu0SB2yxL5A/exec';
-  
+  document.getElementById("submit_btn").ariaDisabled="true"
     //get the form from DOM (Document object model) 
     var form = document.getElementById('form');
         var xhr = new XMLHttpRequest();
@@ -144,6 +145,7 @@ function check_empty() {
  
         xhr.onreadystatechange = function() {
             if (xhr.readyState == XMLHttpRequest.DONE) {
+              formOpen=false;
   alert("Form Submitted Successfully...");
                 form.reset(); //reset form after AJAX success.
                 div_hide();
@@ -173,6 +175,7 @@ function check_empty() {
   
 function showPopup(){
   if(isContinue){
+  formOpen=true;
     if (!hasAddedEventListenersForRestart) {
       hasAddedEventListenersForRestart = true;
   
@@ -224,23 +227,27 @@ function setupGameReset() {
 }
 
 function reset() {
-  isContinue=true;
-  hasAddedEventListenersForRestart = false;
-  gameOver = false;
-  gameComplete = false;
-  waitingToStart = false;
-  ground.reset();
-  cactiController.reset();
-  score.reset();
-  gameSpeed = GAME_SPEED_START;
+  if(!formOpen){
+    isContinue=true;
+    hasAddedEventListenersForRestart = false;
+    gameOver = false;
+    gameComplete = false;
+    waitingToStart = false;
+    ground.reset();
+    cactiController.reset();
+    score.reset();
+    gameSpeed = GAME_SPEED_START;
+  }
 }
 function continueGame() {
-  cactiController.reset();
-  hasAddedEventListenersForRestart = false;
-  gameOver = false;
-  waitingToStart = false;
-  // ground.reset();
-  // cactiController.reset();
+  if(!formOpen){
+    cactiController.reset();
+    hasAddedEventListenersForRestart = false;
+    gameOver = false;
+    waitingToStart = false;
+    // ground.reset();
+    // cactiController.reset();
+  }
 }
 function showStartGameText() {
   const fontSize = 40 * scaleRatio;
@@ -487,6 +494,6 @@ function gameLoop(currentTime) {
 }
 
 requestAnimationFrame(gameLoop);
-setupGameReset()
+setupGameReset();
 // window.addEventListener("keyup", reset, { once: true });
 // window.addEventListener("touchstart", reset, { once: true });
