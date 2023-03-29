@@ -48,7 +48,7 @@ export default class Ground {
     this.ctx.drawImage(this.sunImage, 500 * this.scaleRatio,this.canvas.height - this.height*1.8 - 1.5 * this.scaleRatio, 60*this.scaleRatio, 60*this.scaleRatio);
     this.ctx.drawImage(this.cloudImage, 470 * this.scaleRatio,this.canvas.height - this.height*1.6 - 1.5 * this.scaleRatio, 60*this.scaleRatio, 60*this.scaleRatio);
     this.ctx.drawImage(this.cloudImage, 530 * this.scaleRatio,this.canvas.height - this.height*1.7 - 1.5 * this.scaleRatio, 60*this.scaleRatio, 60*this.scaleRatio);
-    this.ctx.drawImage(this.birdImage, 300 * this.scaleRatio,this.canvas.height - this.height*1.4 - 1.5 * this.scaleRatio, 40*this.scaleRatio, 40*this.scaleRatio);
+    // this.ctx.drawImage(this.birdImage, 300 * this.scaleRatio,this.canvas.height - this.height*1.4 - 1.5 * this.scaleRatio, 40*this.scaleRatio, 40*this.scaleRatio);
     // this.ctx.drawImage(
     //   this.cloudImage,
     //   this.width/2.05,
