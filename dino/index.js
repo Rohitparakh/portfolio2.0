@@ -288,8 +288,10 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[0].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[0].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -302,9 +304,11 @@ function gameLoop(currentTime) {
       case (scoreCurr > 3999 && scoreCurr < 4001):        
         var audio = new Audio('audio/point.mp3');
         audio.play();
-        document.getElementsByClassName("image_container")[1].classList.add("show")
+        document.getElementsByClassName("image_container")[1].classList.add("show");
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[1].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -318,8 +322,10 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[2].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[2].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -333,8 +339,10 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[3].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")        
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[3].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -348,8 +356,10 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[4].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[4].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -363,8 +373,10 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[5].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[5].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -378,8 +390,10 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[6].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[6].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -393,8 +407,10 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[7].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[7].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -408,8 +424,10 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[8].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[8].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -423,8 +441,11 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[9].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[9].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
+
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -438,8 +459,11 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[10].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[10].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
+
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -453,8 +477,10 @@ function gameLoop(currentTime) {
         var audio = new Audio('audio/point.mp3');
         audio.play();
         document.getElementsByClassName("image_container")[11].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[11].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
@@ -467,6 +493,12 @@ function gameLoop(currentTime) {
       case (scoreCurr < 25999 && scoreCurr>26001):
         var audio = new Audio('audio/point.mp3');
         audio.play();
+        document.getElementsByClassName("image_container")[12].classList.add("show")
+        document.getElementsByClassName("logo")[0].classList.add("hide")
+        setTimeout(()=>{
+          document.getElementsByClassName("image_container")[12].classList.remove("show")
+        document.getElementsByClassName("logo")[0].classList.remove("hide")
+        },15000)  
         //Update game objects
         ground.update(gameSpeed, frameTimeDelta);
         cactiController.update(gameSpeed, frameTimeDelta);
