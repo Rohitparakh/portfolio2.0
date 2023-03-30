@@ -128,6 +128,8 @@ function check_empty() {
   if (document.getElementById('Name').value == "" || document.getElementById('Email').value == "" ) {
   alert("Fill All Fields !");
   } else {
+  document.getElementById("submit_btn").disabled = true;
+  document.getElementById("submit_btn").value="Loading...";
   // document.getElementById('form').submit();
   console.log("1")
   var url = 'https://script.google.com/macros/s/AKfycbw8__iPhe4gBJPCgWOT_wbzATOCcMjLzhew_oIS3leserAEspSoTv7MOayEu0SB2yxL5A/exec';
@@ -147,14 +149,22 @@ function check_empty() {
             if (xhr.readyState == XMLHttpRequest.DONE) {
               formOpen=false;
   // alert("Form Submitted Successfully...");
+  document.getElementById("submit_btn").value="Success";
+  document.getElementById("submit_btn").disabled = false;
+  document.getElementById("submit_btn").value="Submit";
+
                 form.reset(); //reset form after AJAX success.
                 div_hide();
                 continueGame();
   console.log("2");
 
+            }else{
+  document.getElementById("submit_btn").disabled = false;
+  document.getElementById("submit_btn").value="Submit";
             }
         }
         console.log("3")
+  
         //Dont submit the form.
         return false; 
   
