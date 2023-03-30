@@ -134,12 +134,20 @@ right:-14px;
 top:-14px;
 cursor:pointer
 }
+
 div#popupContact {
 position:absolute;
 left:50%;
 top:17%;
 margin-left:-202px;
 font-family:'Raleway',sans-serif
+}
+@media(max-width:600px){ 
+  div#popupContact{
+    left: 100%;
+    top: 17%;
+    transform: translate(-50%);
+  }
 }
 form {
 max-width:300px;

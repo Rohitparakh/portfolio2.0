@@ -146,7 +146,7 @@ function check_empty() {
         xhr.onreadystatechange = function() {
             if (xhr.readyState == XMLHttpRequest.DONE) {
               formOpen=false;
-  alert("Form Submitted Successfully...");
+  // alert("Form Submitted Successfully...");
                 form.reset(); //reset form after AJAX success.
                 div_hide();
                 continueGame();
@@ -184,7 +184,7 @@ function showPopup(){
         // window.addEventListener("touchstart", continueGame, { once: true });
       }, 1000);
     }
-    alert("Game over, fill details to get a chance to continue from your highscore");
+    alert("Game over, fill details to get a chance to continue");
     div_show();
     // continueGame();
   }else{
