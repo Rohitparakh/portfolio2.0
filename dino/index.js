@@ -1,5 +1,6 @@
 import Player from "./Player.js";
 import Ground from "./Ground.js";
+import Sun from "./Sun.js";
 import CactiController from "./CactiController.js";
 import Score from "./Score.js";
 
@@ -28,6 +29,7 @@ const CACTI_CONFIG = [
 //Game Objects
 let player = null;
 let ground = null;
+let sun = null;
 let cactiController = null;
 let score = null;
 
@@ -60,6 +62,14 @@ function createSprites() {
   );
 
   ground = new Ground(
+    ctx,
+    groundWidthInGame,
+    groundHeightInGame,
+    GROUND_AND_CACTUS_SPEED,
+    scaleRatio
+  );
+
+  sun = new Sun(
     ctx,
     groundWidthInGame,
     groundHeightInGame,
@@ -292,164 +302,129 @@ function gameLoop(currentTime) {
   if (!gameOver && !waitingToStart && !gameComplete) {
     var scoreCurr = score.score;
     var delay = 0;
+    if(scoreCurr>1999){
     switch (true) {    
       // level 1
       case (scoreCurr > 1999 && scoreCurr < 2001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[0].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[0].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 2
       case (scoreCurr > 3999 && scoreCurr < 4001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[1].classList.add("show");
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[1].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 3
       case (scoreCurr > 5999 && scoreCurr < 6001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[2].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[2].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 4
       case (scoreCurr > 7999 && scoreCurr < 8001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[3].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")        
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[3].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 5
       case (scoreCurr > 9999 && scoreCurr < 10001):
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[4].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[4].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 6
       case (scoreCurr > 11999 && scoreCurr < 12001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[5].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[5].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 7
       case (scoreCurr > 13999 && scoreCurr < 14001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[6].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[6].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 8
       case (scoreCurr > 15999 && scoreCurr < 16001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[7].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[7].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 9
       case (scoreCurr > 17999 && scoreCurr < 18001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[8].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[8].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 10
       case (scoreCurr > 19999 && scoreCurr < 20001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[9].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
@@ -457,17 +432,13 @@ function gameLoop(currentTime) {
         document.getElementsByClassName("logo")[0].classList.remove("hide")
 
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 11
       case (scoreCurr > 21999 && scoreCurr < 22001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[10].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
@@ -475,34 +446,26 @@ function gameLoop(currentTime) {
         document.getElementsByClassName("logo")[0].classList.remove("hide")
 
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // level 12
       case (scoreCurr > 23999 && scoreCurr < 24001):        
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[11].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
           document.getElementsByClassName("image_container")[11].classList.remove("show")
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)        
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         break;
         
       // game complete
       case (scoreCurr < 25999 && scoreCurr>26001):
-        var audio = new Audio('audio/point.mp3');
-        audio.play();
+        // var audio = new Audio('audio/point.mp3');
+        // audio.play();
         document.getElementsByClassName("image_container")[12].classList.add("show")
         document.getElementsByClassName("logo")[0].classList.add("hide")
         setTimeout(()=>{
@@ -510,39 +473,36 @@ function gameLoop(currentTime) {
         document.getElementsByClassName("logo")[0].classList.remove("hide")
         },15000)  
         //Update game objects
-        ground.update(gameSpeed, frameTimeDelta);
-        cactiController.update(gameSpeed, frameTimeDelta);
-        player.update(gameSpeed, frameTimeDelta);
-        score.update(frameTimeDelta);
-        updateGameSpeed(frameTimeDelta);
+         
         gameComplete=true;
         break;                
      
         default:
         //Update game objects
-    ground.update(gameSpeed, frameTimeDelta);
-    cactiController.update(gameSpeed, frameTimeDelta);
-    player.update(gameSpeed, frameTimeDelta);
-    score.update(frameTimeDelta);   
-    updateGameSpeed(frameTimeDelta);
-  }
-    //Update game objects
     // ground.update(gameSpeed, frameTimeDelta);
     // cactiController.update(gameSpeed, frameTimeDelta);
     // player.update(gameSpeed, frameTimeDelta);
-    // score.update(frameTimeDelta);
-   
+    // score.update(frameTimeDelta);   
     // updateGameSpeed(frameTimeDelta);
+  }
+}
+    //Update game objects
+    ground.update(gameSpeed, frameTimeDelta);
+    cactiController.update(gameSpeed, frameTimeDelta);
+    player.update(gameSpeed, frameTimeDelta);
+    score.update(frameTimeDelta);
+   
+    updateGameSpeed(frameTimeDelta);
   }
 
   if (!gameOver && cactiController.collideWith(player)) {
-    var audio = new Audio('audio/die.mp3');
-    audio.play();
-    setTimeout(()=>{
+    // var audio = new Audio('audio/die.mp3');
+    // audio.play();
+    // setTimeout(()=>{
       gameOver = true;
       score.setHighScore();
 
-    },1)
+    // },1)
 
     // setupGameReset();
   }
@@ -552,6 +512,7 @@ function gameLoop(currentTime) {
   cactiController.draw();
   player.draw();
   score.draw();
+  sun.draw();
 
   if (gameComplete) {
     showGameComplete();

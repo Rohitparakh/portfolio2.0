@@ -81,9 +81,9 @@ export default class Player {
   }
 
   jump(frameTimeDelta) {
-    var audio = new Audio('audio/jump.mp3');
-    if (this.jumpPressed) {
-      audio.play();
+    // var audio = new Audio('audio/jump.mp3');
+    if (this.jumpPressed && !this.jumpInProgress) {
+    //   audio.play();
       this.jumpInProgress = true;
     }
 
